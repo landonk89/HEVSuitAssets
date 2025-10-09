@@ -26,10 +26,10 @@ FirstRaid general/bell [delay:0.25]general/welcome
 OutOfAmmo fx/warning General/AmmunitionDepleted
 
 // Health related
-HeavyBleeding fx/boop fx/boop fx/boop health/MajorBloodLoss general/Detected
-LightBleeding fx/boop fx/boop fx/boop health/MinorBloodLoss general/Detected
+HeavyBleeding [loops:3,interval:0.2,pitch:1.1]fx/beep health/MajorBloodLoss general/Detected
+LightBleeding [loops:3,interval:0.05]fx/boop health/MinorBloodLoss general/Detected
 MajorFracture [loops:3,interval:0.2,pitch:1.1]fx/beep Health/LegFracture General/Detected
-MinorFracture [loops:3,interval:0.2]fx/boop Health/ArmFracture General/Detected
+MinorFracture [loops:3,interval:0.05]fx/boop Health/ArmFracture General/Detected
 NearDeath [loops:3,interval:0.2,pitch:1.1]fx/beep General/Warning Health/UserDeathImminent Health/SeekMedicalAttention
 Death [loops:2]fx/beep [loops:2]fx/beep fx/beep fx/beep fx/flatline
 Death [loops:2]fx/beep [loops:2]fx/beep fx/beep fx/flatline
@@ -118,8 +118,8 @@ $Weapons
 5bf3e03b0db834001d2c4a9c Weapons/Maker/kalashnikov Weapons/Model/ak74 Weapons/Types/545x39
 5bf3e0490db83400196199af Weapons/Maker/kalashnikov Weapons/Model/aks74 Weapons/Types/545x39
 5c46fbd72e2216398b5a8c9c Weapons/Maker/dragunov Weapons/Model/svds Weapons/Types/762x54r
-6410733d5dd49d77bd07847e Weapons/Maker/tokarev Weapons/Model/avt_40 Weapons/Types/762x54r
-643ea5b23db6f9f57107d9fd Weapons/Maker/tokarev Weapons/Model/svt_40 Weapons/Types/762x54r
+6410733d5dd49d77bd07847e Weapons/Maker/tokarev Weapons/Model/avt40 Weapons/Types/762x54r
+643ea5b23db6f9f57107d9fd Weapons/Maker/tokarev Weapons/Model/svt40 Weapons/Types/762x54r
 5df8ce05b11454561e39243b Weapons/Maker/kac Weapons/Model/sr25 Weapons/Types/762x51
 6499849fc93611967b034949 Weapons/Maker/kalashnikov Weapons/Model/ak12 Weapons/Types/545x39
 64ca3d3954fc657e230529cc Weapons/Maker/kalashnikov Weapons/Model/pkp Weapons/Types/762x54r
@@ -151,7 +151,7 @@ $Weapons
 5c07c60e0db834002330051f Weapons/Maker/molot Weapons/Model/adar215 Weapons/Types/556x45
 5c501a4d2e221602b412b540 Weapons/Maker/molot Weapons/Model/veprhunter Weapons/Types/762x51
 5de652c31b7e3716273428be Weapons/Maker/molot Weapons/Model/vpo215 Weapons/Types/366tkm
-5e870397991fd70db46995c8 Weapons/Maker/mossberg Weapons/Model/590a1 Weapons/Types/12g
+5e870397991fd70db46995c8 Weapons/Maker/mossberg Weapons/Model/m590a1 Weapons/Types/12g
 66ffa9b66e19cc902401c5e8 Weapons/Maker/mps Weapons/Model/aa12gen1 Weapons/Types/12g
 67124dcfa3541f2a1f0e788b Weapons/Maker/mps Weapons/Model/aa12gen2 Weapons/Types/12g
 57d14d2524597714373db789 NULL Weapons/Model/pp91kedr Weapons/Types/9x18
@@ -407,11 +407,11 @@ $Types
 635267f063651329f75a4ee8 NULL Weapons/Types/acidgreenflare NULL
 62389aaba63f32501b1b444f NULL Weapons/Types/greenflare NULL
 62389ba9a63f32501b1b4451 NULL Weapons/Types/redflare NULL
-66d98233302686954b0c6f81 NULL Weapons/Types/rsp30blue NULL
-624c09cfbc2e27219346d955 NULL Weapons/Types/rsp30red NULL
-624c09da2cec124eb67c1046 NULL Weapons/Types/rsp30white NULL
-624c09e49b98e019a3315b66 NULL Weapons/Types/rsp30yellow NULL
-66d9f3047b82b9a9aa055d81 NULL Weapons/Types/rsp30yellow NULL
+66d98233302686954b0c6f81 NULL Weapons/Model/rsp30blue NULL
+624c09cfbc2e27219346d955 NULL Weapons/Model/rsp30red NULL
+624c09da2cec124eb67c1046 NULL Weapons/Model/rsp30white NULL
+624c09e49b98e019a3315b66 NULL Weapons/Model/rsp30yellow NULL
+66d9f3047b82b9a9aa055d81 NULL Weapons/Model/rsp30yellow NULL
 62389bc9423ed1685422dc57 NULL Weapons/Types/whiteflare NULL
 62389be94d5d474bf712e709 NULL Weapons/Types/yellowflare NULL 
 
