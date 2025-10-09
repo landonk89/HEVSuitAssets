@@ -1,15 +1,15 @@
 ManifestFileVersion: 0
-CRC: 337148887
+CRC: 2455997346
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 0336501045f540009359e73206cf216c
+    Hash: e14b1e9a4e40e7509d9bbb2e1d37737a
   TypeTreeHash:
     serializedVersion: 2
     Hash: 04fe97b7fc2f56a12f72365bd4c81609
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: 0336501045f540009359e73206cf216c
+    Hash: e14b1e9a4e40e7509d9bbb2e1d37737a
 HashAppended: 0
 ClassTypes:
 - Class: 49
@@ -104,8 +104,9 @@ Assets:
 - Assets/sounds/Weapons/Model/vector9mm.wav
 - Assets/sounds/Weapons/Types/p.wav
 - Assets/sounds/Locations/Factory/Cellars.wav
-- Assets/sounds/Weapons/Model/opsks.wav
+- Assets/sounds/Numbers/negative.wav
 - Assets/sounds/Weapons/Types/superformancehp.wav
+- Assets/sounds/Weapons/Model/opsks.wav
 - Assets/sounds/Weapons/Types/762x39.wav
 - Assets/sounds/Items/Provisions/Iskra.wav
 - Assets/sounds/Weapons/Model/pm.wav
@@ -452,8 +453,9 @@ Assets:
 - Assets/sounds/Locations/Woods/RUAFGate.wav
 - Assets/sounds/Weapons/Types/9x39.wav
 - Assets/sounds/Weapons/Model/vpo215.wav
-- Assets/sounds/Weapons/Parts/Handguard.wav
+- Assets/sounds/Numbers/thousand.wav
 - Assets/sounds/Weapons/Types/m80.wav
+- Assets/sounds/Weapons/Parts/Handguard.wav
 - Assets/sounds/Numbers/Eleven.wav
 - Assets/sounds/Weapons/Types/buckshot56mm.wav
 - Assets/sounds/Weapons/Model/ags30.wav
@@ -563,6 +565,7 @@ Assets:
 - Assets/sounds/General/Was.wav
 - Assets/sounds/General/Range2.wav
 - Assets/sounds/Characters/Scav1.wav
+- Assets/sounds/Numbers/zero.wav
 - Assets/sounds/Weapons/Types/snb.wav
 - Assets/sounds/Weapons/Generic/Millimeter.wav
 - Assets/sounds/Numbers/Forty.wav
@@ -627,6 +630,7 @@ Assets:
 - Assets/sounds/Weapons/Parts/TacticalDevice.wav
 - Assets/sounds/Weapons/Model/trgm10.wav
 - Assets/sounds/Locations/Customs/OldGasStationGate.wav
+- Assets/sounds/Numbers/hundred.wav
 - Assets/sounds/FX/beep.wav
 - Assets/sounds/Weapons/Generic/StationaryMachinegun.wav
 - Assets/sounds/Weapons/Maker/iwi.wav
