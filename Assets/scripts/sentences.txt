@@ -8,7 +8,7 @@
 //	volume(float) - The volume of the audio, where 1.0 is default.
 //	delay(float) - Wait this long in seconds before playing this sound.
 //
-// Default delay between audioclips is 0.1s, unless otherwise specified.
+// Default delay between audioclips is 0.25s, unless otherwise specified.
 // Example usage of tags:
 // [loops:3,interval:0.3]folder/filename - Play this file 3 times in a row with 0.3 seconds of silence between loops.
 // [pitch:1.2]folder/filename - This audio's pitch is 20% above normal.
@@ -20,7 +20,7 @@
 $Events
 
 // General stuff
-FirstRaid general/bell [delay:0.25]general/welcome
+FirstRaid general/bell general/welcome
 
 // Weapon related
 OutOfAmmo fx/warning General/AmmunitionDepleted
@@ -43,7 +43,7 @@ MortarStrike fx/warning general/danger inraidevents/ArtilleryBarrageImminent
 // These MUST follow this format: itemId makerName modelName caliber
 $Weapons
 
-627e14b21713922ded6f2c15 accuracyinernational axmc 338lapua
+627e14b21713922ded6f2c15 accuracyinternational axmc 338lapua
 674d6121c09f69dfb201a888 aklysdefense velociraptor 300blackout
 54491c4f4bdc2db1078b4568 baikal mp133 12g
 5580223e4bdc2d1c128b457f baikal mp43 12g
@@ -53,7 +53,7 @@ $Weapons
 64748cb8de82c85eaf0a273a baikal mp43short 12g
 57e26ea924597715ca604a09 bars a-2607 melee
 57e26fc7245977162a14b800 bars a-2607 melee
-6259b864ebedf17603599e88 benelli m3 12g
+6259b864ebedf17603599e88 benelli m3super90 12g
 5cadc190ae921500103bb3b6 beretta m9a3 9x19
 5de7bd7bfd6b4e6e2276dc25 bt mp9n 9x19
 5e00903ae9dc277128008b87 bt mp9 9x19
@@ -80,19 +80,19 @@ $Weapons
 5a7ae0c351dfba0017554310 glock seventeen 9x19
 5b1fa9b25acfc40018633c01 glock eighteenc 9x19
 63088377b5cd696784087147 glock nineteenx 9x19
-5e32f56fcb6d5863cc5e5ee4 grenade vog17 NULL
-5e340dcdcb6d5863cc5e5efb grenade vog25 NULL
+5e32f56fcb6d5863cc5e5ee4 NULL vog17 grenade
+5e340dcdcb6d5863cc5e5efb NULL vog25 grenade
 5926bb2186f7744b1c6c6e60 hk mp5 9x19
 5ba26383d4351e00334c93d9 hk mp7a1 46x30
 5bb2475ed4351e00853264e3 hk 416a5 556x45
 5bd70322209c4d00d7167b8f hk mp7a2 46x30
 5d2f0d8048f0356c925bc3b0 hk mp5k 9x19
-5fc3e272f8b6a877a729eac5 hk ump 45acp
+5fc3e272f8b6a877a729eac5 hk ump45 45acp
 6176aca650224f204c1da3fb hk g28 762x51
-6193a720f8ee7e52e42109ed hk usp 45acp
+6193a720f8ee7e52e42109ed hk usp45 45acp
 623063e994fc3f7b302a9696 hk g36 556x45
-6680304edadb7aa61d00cef0 iwi uzi_pro 9x19
-668e71a8dadf42204c032ce1 iwi uzi_pro 9x19
+6680304edadb7aa61d00cef0 iwi uzipro 9x19
+668e71a8dadf42204c032ce1 iwi uzipro 9x19
 66992b349950f5f4cd06029f iwi uzi 9x19
 55801eed4bdc2d89578b4588 izhmash sv98 762x54r
 5644bd2b4bdc2d3b4c8b4572 kalashnikov ak74n 545x39
@@ -127,7 +127,7 @@ $Weapons
 674fe9a75e51f1c47c04ec23 kalashnikov saiga12k 12g
 576165642459773c7a400233 kalashnikov saiga12k 12g
 5cadfbf7ae92152ac412eeef kbp ash12 127x55
-633ec7c2a6918cb895019c6c kbp rsh_12 127x55
+633ec7c2a6918cb895019c6c kbp rsh12 127x55
 644674a13d52156624001fbc kbp 9a91 9x39
 645e0c6b3b381ede770e1cc9 kbp vsk94 9x39
 5f2a9575926fd9352339381f keltec rfb 762x51
@@ -142,7 +142,7 @@ $Weapons
 669fa3f88abd2662d80eee77 magnumresearch deserteagle 50ae
 669fa409933e898cce0c2166 magnumresearch deserteagle 357magnum
 5448bd6b4bdc2dfc2f8b4569 makarov pm 9x18
-579204f224597773d619e051 makarov pm_treaded 9x18
+579204f224597773d619e051 makarov pm_threaded 9x18
 6275303a9f372d6ea97f9ec7 milkor m32a1 40x46
 5bffdd7e0db834001b734a1a millerbros melee_m2 melee
 587e02ff24597743df3deaeb molot opsks 762x39
@@ -159,20 +159,19 @@ $Weapons
 57f4c844245977379d5c14d1 NULL pp9klin 9x18
 5c0126f40db834002a125382 NULL redrebel melee
 5cdeb229d7f00c000e7ce174 NULL nsv 127x108
-66d9f1abb16d9aacf5068468 NULL rsp30yellow NULL
-5df24cf80dee1b22f862e9bc orsis t5000 762x51
+5df24cf80dee1b22f862e9bc orsis t5000m 762x51
 5a367e5dc4a282000e49738f remington rsass 762x51
 5a7828548dc32e5a9c28b516 remington m870 12g
 5bfea6e90db834001b7347f3 remington m700 762x51
 628a60ae6b1d481ff772e9c8 rifledynamics rd704 762x39
 628b5638ad252a16da6dd245 sag ak545 545x39
-628b9c37a733087d0d7fe84b sag ak545_short 545x39
+628b9c37a733087d0d7fe84b sag ak545short 545x39
 673cab3e03c6a20581028bc1 sako trgm10 338lapua
 674d90b55704568fe60bc8f5 semin pushdagger melee
 56d59856d2720bd8418b456a sig p226r 9x19
 58948c8e86f77409493f7266 sig mpx 9x19
 5fbcc1d9016cce60e8341ab3 sig mcx 300blackout
-65290f395ae2ae97b80fdf2d sig mcx_spear 68x51
+65290f395ae2ae97b80fdf2d sig mcxspear 68x51
 574d967124597745970e7c94 simonov sks 762x39
 63920105a83e15700a00f168 sog voodoohawk melee
 60339954d62c9b14ed777c06 soyuz stm9 9x19
@@ -189,8 +188,8 @@ $Weapons
 59f98b4986f7746f546d2cef tochmash sr1mp 9x21
 62e14904c2699c0ec93adc47 tochmash sr2m 9x21
 651450ce0e00edc794068371 tochmash sr3m 9x39
-571a12c42459771f627b58a0 tokarev tt 762x25
-5b3b713c5acfc4330140bd8d tokarev ttgold 762x25
+571a12c42459771f627b58a0 tokarev tt33 762x25
+5b3b713c5acfc4330140bd8d tokarev ttgolden 762x25
 5ea03f7400685063ec28bfa8 tokarev ppsh41 762x25
 5a38e6bac4a2826c6e06d79b toz 106 20g
 5e848cc2988a8701445df1e8 toz ks23m 23x75
@@ -216,12 +215,6 @@ $Weapons
 618a431df1eb8e24b8741deb NULL rgo impact
 619256e5f8af2c1a4e1f5d92 NULL m7290 flash
 66dae7cbeb28f0f96809f325 NULL v40 frag
-624c0b3340357b5f566e8766 NULL rsp30yellow flare
-66d9f1abb16d9aacf5068468 NULL rsp30yellow flare
-6217726288ed9f0845317459 NULL rsp30green flare
-62178c4d4ecf221597654e3d NULL rsp30red flare
-66d98233302686954b0c6f81 NULL rsp30blue flare
-62178be9d0050232da3485d9 NULL rsp30white flare
 
 // Tell parser we're doing 'Types' now
 // This section identifies ammo types
@@ -345,7 +338,7 @@ $Types
 573603c924597764442bd9cb 762x25 t tracer
 5656d7c34bdc2d9d198b4587 762x39 ps NULL
 59e0d99486f7744a32234762 762x39 bp NULL
-59e4cf5286f7741778269d8a 762x39 t45m tracer
+59e4cf5286f7741778269d8a 762x39 t45m1 tracer
 59e4d24686f7741776641ac7 762x39 us subsonic
 59e4d3d286f774176a36250a 762x39 hp NULL
 601aa3d2b2bcb34913271e6d 762x39 maiap NULL
@@ -413,5 +406,10 @@ $Types
 624c09e49b98e019a3315b66 NULL rsp30yellow NULL
 66d9f3047b82b9a9aa055d81 NULL rsp30yellow NULL
 62389bc9423ed1685422dc57 NULL whiteflare NULL
-62389be94d5d474bf712e709 NULL yellowflare NULL 
+62389be94d5d474bf712e709 NULL yellowflare NULL
+624c0b3340357b5f566e8766 NULL rsp30yellow flare
+66d9f1abb16d9aacf5068468 NULL rsp30yellow flare
+6217726288ed9f0845317459 NULL rsp30green flare
+62178c4d4ecf221597654e3d NULL rsp30red flare
+62178be9d0050232da3485d9 NULL rsp30white flare
 

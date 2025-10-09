@@ -1,15 +1,15 @@
 ManifestFileVersion: 0
-CRC: 2455997346
+CRC: 1879121402
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: e14b1e9a4e40e7509d9bbb2e1d37737a
+    Hash: 0cb84252ce65e636a0497da6598b0fc9
   TypeTreeHash:
     serializedVersion: 2
     Hash: 04fe97b7fc2f56a12f72365bd4c81609
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: e14b1e9a4e40e7509d9bbb2e1d37737a
+    Hash: 0cb84252ce65e636a0497da6598b0fc9
 HashAppended: 0
 ClassTypes:
 - Class: 49
@@ -22,7 +22,6 @@ Assets:
 - Assets/sounds/Weapons/Model/ak74n.wav
 - Assets/sounds/Weapons/Types/m856a1.wav
 - Assets/sounds/Weapons/Types/300whisper.wav
-- Assets/sounds/Weapons/Maker/iIzhmash.wav
 - Assets/sounds/Weapons/Model/pp9101kedrb.wav
 - Assets/sounds/Locations/Customs/OldGasStation.wav
 - Assets/sounds/Weapons/Types/ppe.wav
@@ -58,7 +57,7 @@ Assets:
 - Assets/sounds/Characters/Skier.wav
 - Assets/sounds/General/InsufficientPower.wav
 - Assets/sounds/Weapons/Model/rgd2.wav
-- Assets/sounds/Weapons/Model/rsp30blue.wav
+- Assets/sounds/Weapons/Types/rsp30blue.wav
 - Assets/sounds/Locations/GroundZero/EmercomCheckpoint.wav
 - Assets/sounds/Weapons/Model/aks74un.wav
 - Assets/sounds/Weapons/Model/aks74n.wav
@@ -148,7 +147,7 @@ Assets:
 - Assets/sounds/Weapons/Types/dgs.wav
 - Assets/sounds/Items/Containers/ThiccWeaponCase.wav
 - Assets/sounds/Items/Meds/Grizzly.wav
-- Assets/sounds/Weapons/Model/rsp30yellow.wav
+- Assets/sounds/Weapons/Types/rsp30yellow.wav
 - Assets/sounds/Locations/Woods/ZB16.wav
 - Assets/sounds/Locations/Reserve/ExitToWoods.wav
 - Assets/sounds/Weapons/Model/rshg2.wav
@@ -201,7 +200,7 @@ Assets:
 - Assets/sounds/Locations/Reserve/UndergroundNorth.wav
 - Assets/sounds/InRaidEvents/NearestEvacuationPointIs.wav
 - Assets/sounds/FX/blip.wav
-- Assets/sounds/Weapons/Model/rsp30.wav
+- Assets/sounds/Weapons/Types/rsp30.wav
 - Assets/sounds/Characters/Knight.wav
 - Assets/sounds/Weapons/Types/tcwsp.wav
 - Assets/sounds/Characters/Ref.wav
@@ -263,7 +262,7 @@ Assets:
 - Assets/sounds/Locations/Customs/RailroadToMilitaryBase.wav
 - Assets/sounds/Weapons/Maker/kbp.wav
 - Assets/sounds/Locations/Woods/RailwayBridgeToTarkov.wav
-- Assets/sounds/Weapons/Model/rsp30red.wav
+- Assets/sounds/Weapons/Types/rsp30red.wav
 - Assets/sounds/Items/Containers/ItemCase.wav
 - Assets/sounds/General/Danger.wav
 - Assets/sounds/Weapons/Model/m32a1.wav
@@ -335,6 +334,7 @@ Assets:
 - Assets/sounds/Characters/Bear2.wav
 - Assets/sounds/Items/Meds/Surv12.wav
 - Assets/sounds/Compass/SouthWest.wav
+- Assets/sounds/Weapons/Maker/Izhmash.wav
 - Assets/sounds/Weapons/Model/p90.wav
 - Assets/sounds/Weapons/Model/sr25.wav
 - Assets/sounds/Items/Stims/Propital.wav
@@ -639,7 +639,7 @@ Assets:
 - Assets/sounds/Weapons/Model/mp9n.wav
 - Assets/sounds/Weapons/Model/axmc.wav
 - Assets/sounds/Numbers/Twelve.wav
-- Assets/sounds/Weapons/Model/rsp30white.wav
+- Assets/sounds/Weapons/Types/rsp30white.wav
 - Assets/sounds/Weapons/Types/50bmg.wav
 - Assets/sounds/Locations/Reserve/WhitePawn.wav
 - Assets/sounds/FX/wpn_hudoff.wav
@@ -702,7 +702,7 @@ Assets:
 - Assets/sounds/Weapons/Generic/DoubleBarrelShotgun.wav
 - Assets/sounds/Time/Seconds.wav
 - Assets/sounds/Health/SplintApplied.wav
-- Assets/sounds/Weapons/Model/rsp30green.wav
+- Assets/sounds/Weapons/Types/rsp30green.wav
 - Assets/sounds/Weapons/Types/ss197sr.wav
 - Assets/sounds/Locations/Customs/RailroadPassage.wav
 - Assets/sounds/Items/Provisions/Sugar.wav
