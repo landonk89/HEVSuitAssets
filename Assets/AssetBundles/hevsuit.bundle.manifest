@@ -1,22 +1,42 @@
 ManifestFileVersion: 0
-CRC: 1879121402
+CRC: 2737839222
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 0cb84252ce65e636a0497da6598b0fc9
+    Hash: b46be108723a4368fe8c9713d76f12f1
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 04fe97b7fc2f56a12f72365bd4c81609
+    Hash: de17607596aa9472ebecca069f5122a6
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: 0cb84252ce65e636a0497da6598b0fc9
+    Hash: b46be108723a4368fe8c9713d76f12f1
 HashAppended: 0
 ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
 - Class: 49
   Script: {instanceID: 0}
 - Class: 83
   Script: {instanceID: 0}
-SerializeReferenceClassIdentifiers: []
+- Class: 114
+  Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 222
+  Script: {instanceID: 0}
+- Class: 223
+  Script: {instanceID: 0}
+- Class: 224
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.Events.PersistentCallGroup
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
 Assets:
 - Assets/sounds/Locations/Customs/TrailerPark.wav
 - Assets/sounds/Weapons/Model/ak74n.wav
@@ -111,6 +131,7 @@ Assets:
 - Assets/sounds/Weapons/Model/pm.wav
 - Assets/sounds/Weapons/Model/pp1901vityaz.wav
 - Assets/sounds/Weapons/Types/bp.wav
+- Assets/sprites/damageup.png
 - Assets/sounds/Weapons/Model/9a91.wav
 - Assets/sounds/Weapons/Maker/kriss.wav
 - Assets/sounds/Locations/Lighthouse/HideoutUnderLandingStage.wav
@@ -387,6 +408,7 @@ Assets:
 - Assets/sounds/Weapons/Generic/Submachinegun.wav
 - Assets/sounds/Weapons/Types/ultranosler.wav
 - Assets/sounds/Weapons/Maker/degtyarov.wav
+- Assets/sprites/damagedown.png
 - Assets/sounds/Locations/Lighthouse/MountainPass.wav
 - Assets/sounds/Locations/Lighthouse/PassageByTheLake.wav
 - Assets/sounds/Weapons/Maker/mossberg.wav
@@ -415,6 +437,7 @@ Assets:
 - Assets/sounds/Weapons/Model/m3super90.wav
 - Assets/sounds/Weapons/Types/fmjsx.wav
 - Assets/sounds/Weapons/Model/mp43.wav
+- Assets/Prefabs/HUD.prefab
 - Assets/sounds/Numbers/Fifty.wav
 - Assets/sounds/Locations/Reserve/ScavLands.wav
 - Assets/sounds/Weapons/Maker/tochmash.wav
@@ -467,11 +490,12 @@ Assets:
 - Assets/sounds/Characters/Bear3.wav
 - Assets/sounds/Weapons/Model/mk18.wav
 - Assets/sounds/InRaidEvents/ArmoredVehicle.wav
+- Assets/sprites/damageright.png
 - Assets/sounds/Weapons/Model/v40.wav
-- Assets/sounds/Weapons/Types/m80a1.wav
 - Assets/sounds/Weapons/Types/leadslug.wav
 - Assets/sounds/Locations/Reserve/HoleInTheWall.wav
 - Assets/sounds/Items/Generic/Keycard.wav
+- Assets/sounds/Weapons/Types/m80a1.wav
 - Assets/sounds/Weapons/Generic/AssaultRifle.wav
 - Assets/sounds/Locations/Labs/ParkingGate.wav
 - Assets/sounds/Numbers/Fourteen.wav
@@ -778,6 +802,7 @@ Assets:
 - Assets/sounds/Locations/Labs/CargoElevator.wav
 - Assets/sounds/Locations/Interchange/OLI.wav
 - Assets/sounds/Weapons/Model/mts255.wav
+- Assets/sprites/damageleft.png
 - Assets/sounds/Items/Provisions/Superwater.wav
 - Assets/sounds/LootContainers/SupplyCrate1.wav
 - Assets/sounds/Weapons/Model/pp91kedr.wav

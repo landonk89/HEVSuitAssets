@@ -258,7 +258,7 @@ $Types
 6196364158ef8c428c287d9f 300blackout vmax NULL
 619636be6db0f2477964e710 300blackout m62 tracer
 64b8725c4b75259c590fa899 300blackout cbj NULL
-6196365d58ef8c428c287da1 300blackout 300whisper subsonic
+6196365d58ef8c428c287da1 300blackout 300whisper NULL
 5fc275cf85fd526b824a571a 338lapua fmj NULL
 5fc382a9d724d907e2077dab 338lapua ap NULL
 5fc382b6d6fa9c00c571bbc3 338lapua tacx NULL
