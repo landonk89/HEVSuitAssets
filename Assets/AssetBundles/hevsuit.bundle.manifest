@@ -1,15 +1,15 @@
 ManifestFileVersion: 0
-CRC: 2737839222
+CRC: 3294515473
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: b46be108723a4368fe8c9713d76f12f1
+    Hash: 8daf9f194fd56a374ef91913a4db0963
   TypeTreeHash:
     serializedVersion: 2
     Hash: de17607596aa9472ebecca069f5122a6
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: b46be108723a4368fe8c9713d76f12f1
+    Hash: 8daf9f194fd56a374ef91913a4db0963
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -131,7 +131,6 @@ Assets:
 - Assets/sounds/Weapons/Model/pm.wav
 - Assets/sounds/Weapons/Model/pp1901vityaz.wav
 - Assets/sounds/Weapons/Types/bp.wav
-- Assets/sprites/damageup.png
 - Assets/sounds/Weapons/Model/9a91.wav
 - Assets/sounds/Weapons/Maker/kriss.wav
 - Assets/sounds/Locations/Lighthouse/HideoutUnderLandingStage.wav
@@ -203,9 +202,10 @@ Assets:
 - Assets/sounds/Health/VitalsignsCritical.wav
 - Assets/sounds/Locations/Streets/PinewoodBasement.wav
 - Assets/sounds/Locations/Lighthouse.wav
+- Assets/sprites/damageleft.tga
 - Assets/sounds/Weapons/Maker/akguy.wav
-- Assets/sounds/Weapons/Model/mp5k.wav
 - Assets/sounds/Weapons/Types/pab9.wav
+- Assets/sounds/Weapons/Model/mp5k.wav
 - Assets/sounds/Weapons/Model/m1911a1.wav
 - Assets/sounds/Items/Meds/ArmyBandage.wav
 - Assets/sounds/Weapons/Types/45acp.wav
@@ -400,15 +400,15 @@ Assets:
 - Assets/sounds/Numbers/Two.wav
 - Assets/sounds/Items/Stims/Zagustin.wav
 - Assets/sounds/Items/Stims/2A2BTG.wav
+- Assets/sprites/damagedown.tga
 - Assets/sounds/Characters/Raider.wav
-- Assets/sounds/Weapons/Model/seventeen.wav
 - Assets/sounds/Weapons/Types/sighybrid.wav
+- Assets/sounds/Weapons/Model/seventeen.wav
 - Assets/sounds/Locations/Streets/VentilationShaft.wav
 - Assets/sounds/Weapons/Parts/HandGrip.wav
 - Assets/sounds/Weapons/Generic/Submachinegun.wav
 - Assets/sounds/Weapons/Types/ultranosler.wav
 - Assets/sounds/Weapons/Maker/degtyarov.wav
-- Assets/sprites/damagedown.png
 - Assets/sounds/Locations/Lighthouse/MountainPass.wav
 - Assets/sounds/Locations/Lighthouse/PassageByTheLake.wav
 - Assets/sounds/Weapons/Maker/mossberg.wav
@@ -442,8 +442,9 @@ Assets:
 - Assets/sounds/Locations/Reserve/ScavLands.wav
 - Assets/sounds/Weapons/Maker/tochmash.wav
 - Assets/sounds/Characters/Shturman.wav
-- Assets/sounds/Locations/Streets/EntranceToCatacombs.wav
+- Assets/sprites/damageup.tga
 - Assets/sounds/Weapons/Parts/Optic.wav
+- Assets/sounds/Locations/Streets/EntranceToCatacombs.wav
 - Assets/sounds/Weapons/Model/sv98.wav
 - Assets/sounds/Locations/Factory/Gate3.wav
 - Assets/sounds/Weapons/Types/hydrashok.wav
@@ -490,12 +491,11 @@ Assets:
 - Assets/sounds/Characters/Bear3.wav
 - Assets/sounds/Weapons/Model/mk18.wav
 - Assets/sounds/InRaidEvents/ArmoredVehicle.wav
-- Assets/sprites/damageright.png
 - Assets/sounds/Weapons/Model/v40.wav
+- Assets/sounds/Weapons/Types/m80a1.wav
 - Assets/sounds/Weapons/Types/leadslug.wav
 - Assets/sounds/Locations/Reserve/HoleInTheWall.wav
 - Assets/sounds/Items/Generic/Keycard.wav
-- Assets/sounds/Weapons/Types/m80a1.wav
 - Assets/sounds/Weapons/Generic/AssaultRifle.wav
 - Assets/sounds/Locations/Labs/ParkingGate.wav
 - Assets/sounds/Numbers/Fourteen.wav
@@ -545,6 +545,7 @@ Assets:
 - Assets/sounds/Weapons/Types/buckshotexpress.wav
 - Assets/sounds/Weapons/Model/akmsn.wav
 - Assets/sounds/Weapons/Model/p226r.wav
+- Assets/sprites/damageright.tga
 - Assets/sounds/Items/Stims/XTG12.wav
 - Assets/sounds/Weapons/Generic/ExperimentalWeapon.wav
 - Assets/sounds/Characters/BigPipe.wav
@@ -802,7 +803,6 @@ Assets:
 - Assets/sounds/Locations/Labs/CargoElevator.wav
 - Assets/sounds/Locations/Interchange/OLI.wav
 - Assets/sounds/Weapons/Model/mts255.wav
-- Assets/sprites/damageleft.png
 - Assets/sounds/Items/Provisions/Superwater.wav
 - Assets/sounds/LootContainers/SupplyCrate1.wav
 - Assets/sounds/Weapons/Model/pp91kedr.wav
