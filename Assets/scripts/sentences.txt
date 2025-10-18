@@ -28,8 +28,8 @@ OutOfAmmo fx/warning General/AmmunitionDepleted
 // Health related
 HeavyBleeding [loops:3,interval:0.2,pitch:1.1]fx/beep health/MajorBloodLoss general/Detected
 LightBleeding [loops:3,interval:0.1]fx/boop health/MinorBloodLoss general/Detected
-MajorFracture [loops:3,interval:0.2,pitch:1.1]fx/beep Health/LegFracture General/Detected
-MinorFracture [loops:3,interval:0.1]fx/boop Health/ArmFracture General/Detected
+MajorFracture [loops:3,interval:0.2,pitch:1.1]fx/beep Health/MajorFracture General/Detected
+MinorFracture [loops:3,interval:0.1]fx/boop Health/MinorFracture General/Detected
 NearDeath [loops:3,interval:0.2,pitch:1.1]fx/beep General/Warning Health/UserDeathImminent Health/SeekMedicalAttention
 Death [loops:2]fx/beep [loops:2]fx/beep fx/beep fx/beep fx/flatline
 Death [loops:2]fx/beep [loops:2]fx/beep fx/beep fx/flatline

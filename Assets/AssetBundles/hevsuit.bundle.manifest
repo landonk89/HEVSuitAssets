@@ -1,15 +1,15 @@
 ManifestFileVersion: 0
-CRC: 3294515473
+CRC: 4098560057
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 8daf9f194fd56a374ef91913a4db0963
+    Hash: 86f94a023aa82d273992208bcdbd3a29
   TypeTreeHash:
     serializedVersion: 2
     Hash: de17607596aa9472ebecca069f5122a6
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: 8daf9f194fd56a374ef91913a4db0963
+    Hash: 86f94a023aa82d273992208bcdbd3a29
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -156,11 +156,12 @@ Assets:
 - Assets/sounds/Weapons/Types/357magnum.wav
 - Assets/sounds/Weapons/Types/9x19.wav
 - Assets/sounds/General/Administered.wav
-- Assets/sounds/Weapons/Model/mp443.wav
+- Assets/sounds/Health/MajorFracture.wav
 - Assets/sounds/Weapons/Maker/sag.wav
 - Assets/sounds/Weapons/Model/mp18.wav
 - Assets/sounds/Items/Meds/CMS.wav
 - Assets/sounds/Items/Stims/SJ15.wav
+- Assets/sounds/Weapons/Model/mp443.wav
 - Assets/sounds/Items/Provisions/Water.wav
 - Assets/sounds/Weapons/Model/t5000m.wav
 - Assets/sounds/Locations/Interchange/HoleInTheFence.wav
@@ -697,6 +698,7 @@ Assets:
 - Assets/sounds/Items/Stims/Obdolbos2.wav
 - Assets/sounds/Weapons/Types/lrnpc.wav
 - Assets/sounds/Weapons/Model/mosininfantry.wav
+- Assets/sounds/Health/MinorFracture.wav
 - Assets/sounds/Characters/Guard.wav
 - Assets/sounds/Weapons/Model/m4a1.wav
 - Assets/sounds/Characters/SantaClaus.wav
