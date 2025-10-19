@@ -1,15 +1,15 @@
 ManifestFileVersion: 0
-CRC: 4098560057
+CRC: 1849106986
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 86f94a023aa82d273992208bcdbd3a29
+    Hash: e52e84c1e2d8cf20834c0a4d8554f682
   TypeTreeHash:
     serializedVersion: 2
-    Hash: de17607596aa9472ebecca069f5122a6
+    Hash: e029a1bf81e2eb3172113189a7c5c01e
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: 86f94a023aa82d273992208bcdbd3a29
+    Hash: e52e84c1e2d8cf20834c0a4d8554f682
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -21,7 +21,11 @@ ClassTypes:
 - Class: 83
   Script: {instanceID: 0}
 - Class: 114
+  Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+- Class: 114
   Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 30649d3a9faa99c48a7b1166b86bf2a0, type: 3}
 - Class: 115
   Script: {instanceID: 0}
 - Class: 213
@@ -35,6 +39,8 @@ ClassTypes:
 SerializeReferenceClassIdentifiers:
 - AssemblyName: UnityEngine.CoreModule
   ClassName: UnityEngine.Events.PersistentCallGroup
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.RectOffset
 - AssemblyName: UnityEngine.UI
   ClassName: UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
 Assets:
@@ -56,6 +62,7 @@ Assets:
 - Assets/sounds/Weapons/Maker/lonestar.wav
 - Assets/sounds/Weapons/Maker/sword.wav
 - Assets/sounds/Weapons/Types/starslug.wav
+- Assets/sprites/HudSuitEmpty.tga
 - Assets/sounds/Weapons/Maker/molot.wav
 - Assets/sounds/Weapons/Model/ak102.wav
 - Assets/sounds/General/Explosives.wav
@@ -80,6 +87,7 @@ Assets:
 - Assets/sounds/Weapons/Types/rsp30blue.wav
 - Assets/sounds/Locations/GroundZero/EmercomCheckpoint.wav
 - Assets/sounds/Weapons/Model/aks74un.wav
+- Assets/sprites/hud_dmg_chem.tga
 - Assets/sounds/Weapons/Model/aks74n.wav
 - Assets/sounds/Locations/WoodsAlternate.wav
 - Assets/sounds/Weapons/Maker/iwi_full.wav
@@ -96,7 +104,9 @@ Assets:
 - Assets/sounds/Locations/Labs/MedicalBlockElevator.wav
 - Assets/sounds/Weapons/Maker/makarov.wav
 - Assets/sounds/Locations/Reserve/CheckpointFence.wav
+- Assets/sprites/hud_number_3.tga
 - Assets/sounds/Weapons/Maker/orsis.wav
+- Assets/sprites/hud_number_0.tga
 - Assets/sounds/Weapons/Model/rgn.wav
 - Assets/sounds/Weapons/Types/m882.wav
 - Assets/sounds/Health/MinorBloodLoss.wav
@@ -117,6 +127,7 @@ Assets:
 - Assets/sounds/Locations/Streets/ExpoCheckpoint.wav
 - Assets/sounds/Weapons/Types/buckshotmagnum.wav
 - Assets/sounds/Locations/Reserve/WhiteKing.wav
+- Assets/sprites/hud_number_blank.tga
 - Assets/sounds/Locations/Labs/MainElevator.wav
 - Assets/sounds/Weapons/Maker/accuracyinternational.wav
 - Assets/sounds/Locations/Interchange/SaferoomExfil.wav
@@ -181,12 +192,15 @@ Assets:
 - Assets/sounds/InRaidEvents/AntipersonnelMines.wav
 - Assets/sounds/Numbers/Six.wav
 - Assets/sounds/Weapons/Model/m18.wav
+- Assets/sprites/hud_item_healthkit.tga
 - Assets/sounds/Locations/Streets/StylobateBuilding.wav
 - Assets/sounds/Items/Meds/IFAK.wav
 - Assets/sounds/Weapons/Model/tt33.wav
 - Assets/sounds/Weapons/Parts/Stock.wav
 - Assets/sounds/Weapons/Types/actionsx.wav
+- Assets/sprites/hud_dmg_shock.tga
 - Assets/sounds/Items/Provisions/Vodka.wav
+- Assets/sprites/hud_health_icon.tga
 - Assets/sounds/Weapons/Maker/remington.wav
 - Assets/sounds/Weapons/Model/aa12full.wav
 - Assets/sounds/Weapons/Model/scarh.wav
@@ -196,6 +210,7 @@ Assets:
 - Assets/sounds/General/Distance.wav
 - Assets/sounds/Weapons/Types/7n42.wav
 - Assets/sounds/Numbers/TwoHundred.wav
+- Assets/sprites/hud_flash_full.tga
 - Assets/sounds/Locations/Labs.wav
 - Assets/sounds/Locations/GroundZero/MiraAve.wav
 - Assets/sounds/Weapons/Model/mosinsniper.wav
@@ -203,7 +218,7 @@ Assets:
 - Assets/sounds/Health/VitalsignsCritical.wav
 - Assets/sounds/Locations/Streets/PinewoodBasement.wav
 - Assets/sounds/Locations/Lighthouse.wav
-- Assets/sprites/damageleft.tga
+- Assets/sprites/hit_left.tga
 - Assets/sounds/Weapons/Maker/akguy.wav
 - Assets/sounds/Weapons/Types/pab9.wav
 - Assets/sounds/Weapons/Model/mp5k.wav
@@ -239,14 +254,16 @@ Assets:
 - Assets/sounds/Numbers/Five.wav
 - Assets/sounds/Weapons/Model/ak103.wav
 - Assets/sounds/Weapons/Types/fmj43.wav
-- Assets/sounds/Weapons/Model/mk47.wav
+- Assets/sprites/hud_number_6.tga
 - Assets/sounds/Health/SeekMedicalAttention.wav
+- Assets/sounds/Weapons/Model/mk47.wav
 - Assets/sounds/Weapons/Types/lasermatchfmj.wav
 - Assets/sounds/Weapons/Model/rpk16.wav
 - Assets/sounds/FX/wpn_denyselect.wav
 - Assets/sounds/Weapons/Types/shrap25.wav
 - Assets/sounds/Weapons/Types/ap.wav
 - Assets/sounds/Items/Stims/Perfotoran.wav
+- Assets/sprites/hud_number_8.tga
 - Assets/sounds/Weapons/Types/flechette.wav
 - Assets/sounds/Weapons/Model/vsk94.wav
 - Assets/sounds/Weapons/Maker/dt.wav
@@ -276,6 +293,8 @@ Assets:
 - Assets/sounds/Weapons/Types/prs.wav
 - Assets/sounds/Weapons/Model/106.wav
 - Assets/sounds/Weapons/Model/nineteenx.wav
+- Assets/sprites/HudSuitFull.tga
+- Assets/sprites/hud_divider.tga
 - Assets/sounds/Weapons/Types/buckshot7mm.wav
 - Assets/sounds/Health/TourniquetApplied.wav
 - Assets/sounds/Locations/Factory/SmugglersPassage.wav
@@ -328,6 +347,7 @@ Assets:
 - Assets/sounds/Weapons/Model/m590a1.wav
 - Assets/sounds/Locations/Reserve/BlackPawn.wav
 - Assets/sounds/Numbers/Nineteen.wav
+- Assets/sprites/HudSelection.tga
 - Assets/sounds/Weapons/Types/eko.wav
 - Assets/sounds/Items/Meds/AluminumSplint.wav
 - Assets/sounds/Weapons/Model/sp81.wav
@@ -393,15 +413,16 @@ Assets:
 - Assets/sounds/Weapons/Model/mp43short.wav
 - Assets/sounds/Items/Provisions/Whiskey.wav
 - Assets/sounds/Locations/Customs/ThreeStoryDorm.wav
-- Assets/sounds/Weapons/Parts/Suppressor.wav
+- Assets/sprites/hud_number_2.tga
 - Assets/sounds/Weapons/Maker/hk.wav
 - Assets/sounds/Locations/Factory/MedTentGate.wav
 - Assets/sounds/Weapons/Types/buckshot75mm.wav
+- Assets/sounds/Weapons/Parts/Suppressor.wav
 - Assets/sounds/Locations/Woods/ZB14.wav
 - Assets/sounds/Numbers/Two.wav
 - Assets/sounds/Items/Stims/Zagustin.wav
 - Assets/sounds/Items/Stims/2A2BTG.wav
-- Assets/sprites/damagedown.tga
+- Assets/sprites/hit_down.tga
 - Assets/sounds/Characters/Raider.wav
 - Assets/sounds/Weapons/Types/sighybrid.wav
 - Assets/sounds/Weapons/Model/seventeen.wav
@@ -443,7 +464,7 @@ Assets:
 - Assets/sounds/Locations/Reserve/ScavLands.wav
 - Assets/sounds/Weapons/Maker/tochmash.wav
 - Assets/sounds/Characters/Shturman.wav
-- Assets/sprites/damageup.tga
+- Assets/sprites/hit_up.tga
 - Assets/sounds/Weapons/Parts/Optic.wav
 - Assets/sounds/Locations/Streets/EntranceToCatacombs.wav
 - Assets/sounds/Weapons/Model/sv98.wav
@@ -488,9 +509,11 @@ Assets:
 - Assets/sounds/Items/Meds/AI2.wav
 - Assets/sounds/Locations/Streets/KlimovMall.wav
 - Assets/sounds/Characters/Jaeger.wav
+- Assets/sprites/hud_dmg_bio.tga
 - Assets/sounds/Items/Provisions/ArmyCrackers.wav
 - Assets/sounds/Characters/Bear3.wav
 - Assets/sounds/Weapons/Model/mk18.wav
+- Assets/sprites/hud_number_4.tga
 - Assets/sounds/InRaidEvents/ArmoredVehicle.wav
 - Assets/sounds/Weapons/Model/v40.wav
 - Assets/sounds/Weapons/Types/m80a1.wav
@@ -506,14 +529,15 @@ Assets:
 - Assets/sounds/Weapons/Parts/OpticMount.wav
 - Assets/sounds/Items/Stims/SJ12.wav
 - Assets/sounds/FX/fuzz.wav
+- Assets/sounds/flashlight.wav
 - Assets/sounds/General/Biosigns.wav
-- Assets/sounds/Locations/Customs/RailroadToPort.wav
 - Assets/sounds/Weapons/Model/usp45.wav
-- Assets/sounds/Locations/Lighthouse/SouthernRoadLandslide.wav
+- Assets/sounds/Locations/Customs/RailroadToPort.wav
 - Assets/sounds/Health/LegFracture.wav
 - Assets/sounds/Weapons/Maker/xproducts.wav
 - Assets/sounds/Characters/Partisan.wav
 - Assets/sounds/Weapons/Maker/stechkin.wav
+- Assets/sounds/Locations/Lighthouse/SouthernRoadLandslide.wav
 - Assets/sounds/Weapons/Maker/magnumresearch.wav
 - Assets/sounds/Locations/Lighthouse/SideTunnel.wav
 - Assets/sounds/Locations/Reserve/CliffDescent.wav
@@ -546,7 +570,7 @@ Assets:
 - Assets/sounds/Weapons/Types/buckshotexpress.wav
 - Assets/sounds/Weapons/Model/akmsn.wav
 - Assets/sounds/Weapons/Model/p226r.wav
-- Assets/sprites/damageright.tga
+- Assets/sprites/hit_right.tga
 - Assets/sounds/Items/Stims/XTG12.wav
 - Assets/sounds/Weapons/Generic/ExperimentalWeapon.wav
 - Assets/sounds/Characters/BigPipe.wav
@@ -615,6 +639,7 @@ Assets:
 - Assets/sounds/Weapons/Maker/dsa.wav
 - Assets/sounds/Characters/CultistPriest.wav
 - Assets/sounds/Numbers/Fifteen.wav
+- Assets/sprites/hud_dmg_cold.tga
 - Assets/sounds/Weapons/Model/mp153.wav
 - Assets/sounds/FX/warning.wav
 - Assets/sounds/Weapons/Types/gt.wav
@@ -626,6 +651,7 @@ Assets:
 - Assets/sounds/Weapons/Types/spp.wav
 - Assets/sounds/InRaidEvents/PowerRestored.wav
 - Assets/sounds/Weapons/Model/ak74.wav
+- Assets/sprites/hud_dmg_drown.tga
 - Assets/sounds/Characters/Scav3.wav
 - Assets/sounds/Weapons/Model/m67.wav
 - Assets/sounds/Numbers/Sixteen.wav
@@ -696,7 +722,9 @@ Assets:
 - Assets/sounds/Locations/Streets/Rodina.wav
 - Assets/sounds/Time/TheTimeIsNow.wav
 - Assets/sounds/Items/Stims/Obdolbos2.wav
+- Assets/sprites/hud_dmg_heat.tga
 - Assets/sounds/Weapons/Types/lrnpc.wav
+- Assets/sprites/hud_item_battery.tga
 - Assets/sounds/Weapons/Model/mosininfantry.wav
 - Assets/sounds/Health/MinorFracture.wav
 - Assets/sounds/Characters/Guard.wav
@@ -711,6 +739,7 @@ Assets:
 - Assets/sounds/Locations/Customs/MilitaryBaseCP.wav
 - Assets/sounds/Locations/Woods/OldRailwayDepot.wav
 - Assets/sounds/Weapons/Parts/Magazine.wav
+- Assets/sprites/hud_number_9.tga
 - Assets/sounds/Items/Stims/L1.wav
 - Assets/sounds/Characters/USEC2.wav
 - Assets/sounds/Weapons/Types/r37f.wav
@@ -752,9 +781,10 @@ Assets:
 - Assets/sounds/Weapons/Types/pt.wav
 - Assets/sounds/Locations/Reserve/WhiteBishop.wav
 - Assets/sounds/Locations/TransitTo.wav
-- Assets/sounds/Health/MajorBloodLoss.wav
+- Assets/sprites/hud_number_7.tga
 - Assets/sounds/General/Acquired.wav
 - Assets/sounds/Locations/GroundZero.wav
+- Assets/sounds/Health/MajorBloodLoss.wav
 - Assets/sounds/Locations/Customs/SniperRoadblock.wav
 - Assets/sounds/Weapons/Types/akbs.wav
 - Assets/sounds/Weapons/Model/svd.wav
@@ -786,6 +816,7 @@ Assets:
 - Assets/sounds/Weapons/Types/762x51.wav
 - Assets/sounds/Time/Hours.wav
 - Assets/sounds/Weapons/Generic/Revolver.wav
+- Assets/sprites/hud_flash_beam.tga
 - Assets/sounds/Numbers/Eighteen.wav
 - Assets/sounds/Numbers/Seventeen.wav
 - Assets/sounds/Weapons/Maker/tokarev.wav
@@ -800,6 +831,7 @@ Assets:
 - Assets/sounds/Items/Meds/GoldenStar.wav
 - Assets/sounds/Weapons/Types/blueflare.wav
 - Assets/sounds/General/Is.wav
+- Assets/sprites/hud_number_1.tga
 - Assets/sounds/Weapons/Maker/kalashnikov.wav
 - Assets/sounds/Weapons/Types/57x28.wav
 - Assets/sounds/Locations/Labs/CargoElevator.wav
@@ -817,17 +849,20 @@ Assets:
 - Assets/sounds/Weapons/Types/ap20.wav
 - Assets/sounds/Items/Meds/Calok.wav
 - Assets/sounds/Weapons/Types/m993.wav
-- Assets/sounds/Weapons/Types/geksa.wav
+- Assets/sprites/hud_flash_empty.tga
 - Assets/sounds/Locations/Customs/ZB1011.wav
 - Assets/sounds/Items/Generic/Provisions.wav
 - Assets/sounds/Characters/Birdeye.wav
 - Assets/sounds/Locations/Streets/CrashSite.wav
+- Assets/sounds/Weapons/Types/geksa.wav
 - Assets/sounds/Weapons/Types/grizzly40slug.wav
 - Assets/sounds/Weapons/Types/ap63.wav
 - Assets/sounds/Weapons/Model/g28.wav
 - Assets/sounds/Weapons/Maker/aklysdefense.wav
 - Assets/sounds/General/Meters1.wav
 - Assets/sounds/Characters/Scav2.wav
+- Assets/sprites/hud_number_5.tga
+- Assets/sprites/hud_dmg_gas.tga
 - Assets/sounds/Locations/Shoreline.wav
 - Assets/sounds/Numbers/Twenty.wav
 - Assets/sounds/Weapons/Types/smoke.wav
@@ -850,5 +885,6 @@ Assets:
 - Assets/sounds/Weapons/Maker/milkor.wav
 - Assets/sounds/Weapons/Model/m9a3.wav
 - Assets/sounds/Items/Containers/ThiccItemCase.wav
+- Assets/sprites/hud_dmg_rad.tga
 - Assets/sounds/Weapons/Model/rpdn.wav
 Dependencies: []
