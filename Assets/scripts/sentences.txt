@@ -23,7 +23,9 @@ $Events
 FirstRaid general/bell general/welcome
 
 // Weapon related
-OutOfAmmo fx/warning General/AmmunitionDepleted
+LowAmmo fx/warning
+OutOfAmmo fx/warning Weapons/AmmoDepleted
+Malfunction fx/warning Weapons/Malfunction general/detected
 
 // Health related
 HeavyBleeding [loops:3,interval:0.2,pitch:1.1]fx/beep health/MajorBloodLoss general/Detected
