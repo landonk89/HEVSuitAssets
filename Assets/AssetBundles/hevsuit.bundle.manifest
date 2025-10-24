@@ -1,15 +1,15 @@
 ManifestFileVersion: 0
-CRC: 3350324943
+CRC: 3591292927
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: b8846b0204d0b8a18224ab78b995eb55
+    Hash: 5598e94a8a44e177c759176dd6cda9a2
   TypeTreeHash:
     serializedVersion: 2
     Hash: 96cd30ae7202ab6d576ce8273ebb5f78
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: b8846b0204d0b8a18224ab78b995eb55
+    Hash: 5598e94a8a44e177c759176dd6cda9a2
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -160,6 +160,7 @@ Assets:
 - Assets/sounds/Weapons/Maker/yarygin.wav
 - Assets/sounds/Locations/Woods/NorthernUNRoadblock.wav
 - Assets/sounds/Weapons/Types/sb193.wav
+- Assets/sprites/hud_dmg_bullet.tga
 - Assets/sounds/Weapons/Maker/soyuz.wav
 - Assets/sounds/Weapons/Model/pm_threaded.wav
 - Assets/sounds/Locations/Customs/RailroadToTarkov.wav
@@ -392,6 +393,7 @@ Assets:
 - Assets/sounds/Numbers/NineHundred.wav
 - Assets/sounds/Weapons/Model/svt40.wav
 - Assets/sounds/Weapons/Types/bzht.wav
+- Assets/sprites/hud_dmg_barbed.tga
 - Assets/sounds/FX/buzz.wav
 - Assets/sounds/Locations/Labs/SewageConduit.wav
 - Assets/sounds/Locations/Labs/HangarGate.wav
@@ -882,6 +884,7 @@ Assets:
 - Assets/sounds/LootContainers/Ration.wav
 - Assets/sounds/Weapons/Model/m3super90full.wav
 - Assets/sounds/Weapons/Model/m60e4.wav
+- Assets/sprites/hud_dmg_explosion.tga
 - Assets/sounds/Locations/Labs/ManagersOffice.wav
 - Assets/sounds/Items/Stims/SJ6.wav
 - Assets/sounds/Locations/Interchange/IDEA.wav
