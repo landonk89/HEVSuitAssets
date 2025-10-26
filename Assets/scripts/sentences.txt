@@ -15,19 +15,15 @@
 //
 // Multiple tags can exist together, separated by commas (NO SPACES HERE!!) like so:
 // [delay:1.5,volume:0.7,pitch:0.8]folder/filename
+//
+// Lines starting with $ will set the working directory Ex: $assets/sounds/compass
 
-// Tell parser this is the Events section, these don't have a fixed length and can be however long we want
-$Events
-
-// General stuff
+// Events
+$assets/sounds/
 FirstRaid general/bell general/welcome
-
-// Weapon related
 LowAmmo fx/warning
-OutOfAmmo fx/warning Weapons/AmmoDepleted
+OutOfAmmo fx/warning General/AmmoDepleted
 Malfunction fx/warning Weapons/Malfunction general/detected
-
-// Health related
 HeavyBleeding [loops:3,interval:0.2,pitch:1.1]fx/beep health/MajorBloodLoss general/Detected
 LightBleeding [loops:3,interval:0.1]fx/boop health/MinorBloodLoss general/Detected
 MajorFracture [loops:3,interval:0.2,pitch:1.1]fx/beep Health/MajorFracture General/Detected
@@ -35,383 +31,394 @@ MinorFracture [loops:3,interval:0.1]fx/boop Health/MinorFracture General/Detecte
 NearDeath [loops:3,interval:0.2,pitch:1.1]fx/beep General/Warning Health/UserDeathImminent Health/SeekMedicalAttention
 Death [loops:2]fx/beep [loops:2]fx/beep fx/beep fx/beep fx/flatline
 Death [loops:2]fx/beep [loops:2]fx/beep fx/beep fx/flatline
-
-// Raid events
 MortarStrike fx/warning general/danger inraidevents/ArtilleryBarrageImminent
 
-// Tell parser we're doing 'Weapons' now
-// This section identifies every weapon with a maker/model/caliber voiceline
-// Fixed length of 3 audioclips when parsed so the user can selectively disable maker or type
-// These MUST follow this format: itemId makerName modelName caliber
-$Weapons
+// Compass
+$assets/sounds/compass/
+N north
+NE northeast
+E east
+SE southeast
+S south
+SW southwest
+W west
+NW northwest
 
-627e14b21713922ded6f2c15 accuracyinternational axmc 338lapua
-674d6121c09f69dfb201a888 aklysdefense velociraptor 300blackout
-54491c4f4bdc2db1078b4568 baikal mp133 12g
-5580223e4bdc2d1c128b457f baikal mp43 12g
-56dee2bdd2720bc8328b4567 baikal mp153 12g
-606dae0ab0e443224b421bb7 baikal mp155 12g
-61f7c9e189e6fb1a5e3ea78d baikal mp18 762x54r
-64748cb8de82c85eaf0a273a baikal mp43short 12g
-57e26ea924597715ca604a09 bars a-2607 melee
-57e26fc7245977162a14b800 bars a-2607 melee
-6259b864ebedf17603599e88 benelli m3super90 12g
-5cadc190ae921500103bb3b6 beretta m9a3 9x19
-5de7bd7bfd6b4e6e2276dc25 bt mp9n 9x19
-5e00903ae9dc277128008b87 bt mp9 9x19
-61a4c8884f95bc3b2c5dc96f chiappa rhino50ds 357magnum
-624c2e8614da335f1e034d8c chiappa rhino200ds 9x19
-60db29ce99594040e04c4a27 ckib mts255 12g
-606587252535c57a13424cfd cmmg mk47 762x39
-5447a9cd4bdc2dbd208b4567 colt m4a1 556x45
-5e81c3cbac2bb513793cdc75 colt m1911a1 45acp
-5f36a0e5fbf956000b716b65 colt m45a1 45acp
-6513ef33e06849f06c0957ca degtyarov rpd 762x39
-65268d8ecb944ff1e90ea385 degtyarov rpdn 762x39
-5b0bbe4e5acfc40dc528a72d dsa sa58 762x51
-5c488a752e221602b412af63 dt mdr 556x45
-5dcbd56fdbd3d91b3e5468d5 dt mdr 762x51
-5cc82d76e24e8d00134b4b83 fn p90 57x28
-5d3eb3b0a4b93615055e84d2 fn fiveseven 57x28
-5d67abc1a4b93614ec50137f fn fiveseven 57x28
-5e81ebcd8e146c7080625e15 fn 40gl 40mm
-6165ac306ef05c2ce828ef74 fn scarh 762x51
-6183afd850224f204c1da514 fn scarh 762x51
-6184055050224f204c1da540 fn scarl 556x45
-618428466ef05c2ce828f218 fn scarl 556x45
-5a7ae0c351dfba0017554310 glock seventeen 9x19
-5b1fa9b25acfc40018633c01 glock eighteenc 9x19
-63088377b5cd696784087147 glock nineteenx 9x19
-5e32f56fcb6d5863cc5e5ee4 NULL vog17 grenade
-5e340dcdcb6d5863cc5e5efb NULL vog25 grenade
-5926bb2186f7744b1c6c6e60 hk mp5 9x19
-5ba26383d4351e00334c93d9 hk mp7a1 46x30
-5bb2475ed4351e00853264e3 hk 416a5 556x45
-5bd70322209c4d00d7167b8f hk mp7a2 46x30
-5d2f0d8048f0356c925bc3b0 hk mp5k 9x19
-5fc3e272f8b6a877a729eac5 hk ump45 45acp
-6176aca650224f204c1da3fb hk g28 762x51
-6193a720f8ee7e52e42109ed hk usp45 45acp
-623063e994fc3f7b302a9696 hk g36 556x45
-6680304edadb7aa61d00cef0 iwi uzipro 9x19
-668e71a8dadf42204c032ce1 iwi uzipro 9x19
-66992b349950f5f4cd06029f iwi uzi 9x19
-55801eed4bdc2d89578b4588 izhmash sv98 762x54r
-5644bd2b4bdc2d3b4c8b4572 kalashnikov ak74n 545x39
-57dc2fa62459775949412633 kalashnikov aks74u 545x39
-583990e32459771419544dd2 kalashnikov aks74un 545x39
-5839a40f24597726f856b511 kalashnikov aks74ub 545x39
-59984ab886f7743e98271174 kalashnikov pp1901vityaz 9x19
-59d6088586f774275f37482f kalashnikov akm 762x39
-59f9cabd86f7743a10721f46 kalashnikov saiga9 9x19
-59ff346386f77477562ff5e2 kalashnikov akms 762x39
-5a0ec13bfcdbcb00165aa685 kalashnikov akmn 762x39
-5ab8e9fcd8ce870019439434 kalashnikov aks74n 545x39
-5abcbc27d8ce8700182eceeb kalashnikov akmsn 762x39
-5ac4cd105acfc40016339859 kalashnikov ak74m 545x39
-5ac66cb05acfc40198510a10 kalashnikov ak101 556x45
-5ac66d015acfc400180ae6e4 kalashnikov ak102 556x45
-5ac66d2e5acfc43b321d4b53 kalashnikov ak103 762x39
-5ac66d725acfc43b321d4b60 kalashnikov ak104 762x39
-5ac66d9b5acfc4001633997a kalashnikov ak105 545x39
-5ae08f0a5acfc408fb1398a1 izhmash mosinsniper 762x54r
-5bfd297f0db834001a669119 izhmash mosininfantry 762x54r
-5beed0f50db834001c062b12 kalashnikov rpk16 545x39
-5bf3e03b0db834001d2c4a9c kalashnikov ak74 545x39
-5bf3e0490db83400196199af kalashnikov aks74 545x39
-5c46fbd72e2216398b5a8c9c dragunov svds 762x54r
-6410733d5dd49d77bd07847e tokarev avt40 762x54r
-643ea5b23db6f9f57107d9fd tokarev svt40 762x54r
-5df8ce05b11454561e39243b kac sr25 762x51
-6499849fc93611967b034949 kalashnikov ak12 545x39
-64ca3d3954fc657e230529cc kalashnikov pkp 762x54r
-64637076203536ad5600c990 kalashnikov pkm 762x54r
-674fe9a75e51f1c47c04ec23 kalashnikov saiga12k 12g
-576165642459773c7a400233 kalashnikov saiga12k 12g
-5cadfbf7ae92152ac412eeef kbp ash12 127x55
-633ec7c2a6918cb895019c6c kbp rsh12 127x55
-644674a13d52156624001fbc kbp 9a91 9x39
-645e0c6b3b381ede770e1cc9 kbp vsk94 9x39
-5f2a9575926fd9352339381f keltec rfb 762x51
-5fb64bc92b1b027b1f50bcf2 kriss vector45 45acp
-5fc3f2d5900b1d5091531e57 kriss vector9mm 9x19
-602a9740da11d6478d5a06dc lebedev pl15 9x19
-588892092459774ac91d4b11 lobaev dvl10 762x51
-5d43021ca4b9362eab4b5e25 lonestar tx15 556x45
-668fe5a998b5ad715703ddd6 magnumresearch deserteagle 50ae
-669fa39b48fc9f8db6035a0c magnumresearch deserteagle 50ae
-669fa3d876116c89840b1217 magnumresearch deserteagle 50ae
-669fa3f88abd2662d80eee77 magnumresearch deserteagle 50ae
-669fa409933e898cce0c2166 magnumresearch deserteagle 357magnum
-5448bd6b4bdc2dfc2f8b4569 makarov pm 9x18
-579204f224597773d619e051 makarov pm_threaded 9x18
-6275303a9f372d6ea97f9ec7 milkor m32a1 40x46
-5bffdd7e0db834001b734a1a millerbros melee_m2 melee
-587e02ff24597743df3deaeb molot opsks 762x39
-59e6152586f77473dc057aa1 molot veprkm 762x39
-59e6687d86f77411d949b251 molot vpo209 366tkm
-5c07c60e0db834002330051f molot adar215 556x45
-5c501a4d2e221602b412b540 molot veprhunter 762x51
-5de652c31b7e3716273428be molot vpo215 366tkm
-5e870397991fd70db46995c8 mossberg m590a1 12g
-66ffa9b66e19cc902401c5e8 mps aa12gen1 12g
-67124dcfa3541f2a1f0e788b mps aa12gen2 12g
-57d14d2524597714373db789 NULL pp91kedr 9x18
-57f3c6bd24597738e730fa2f NULL pp91kedrb 9x18
-57f4c844245977379d5c14d1 NULL pp9klin 9x18
-5c0126f40db834002a125382 NULL redrebel melee
-5cdeb229d7f00c000e7ce174 NULL nsv 127x108
-5df24cf80dee1b22f862e9bc orsis t5000m 762x51
-5a367e5dc4a282000e49738f remington rsass 762x51
-5a7828548dc32e5a9c28b516 remington m870 12g
-5bfea6e90db834001b7347f3 remington m700 762x51
-628a60ae6b1d481ff772e9c8 rifledynamics rd704 762x39
-628b5638ad252a16da6dd245 sag ak545 545x39
-628b9c37a733087d0d7fe84b sag ak545short 545x39
-673cab3e03c6a20581028bc1 sako trgm10 338lapua
-674d90b55704568fe60bc8f5 semin pushdagger melee
-56d59856d2720bd8418b456a sig p226r 9x19
-58948c8e86f77409493f7266 sig mpx 9x19
-5fbcc1d9016cce60e8341ab3 sig mcx 300blackout
-65290f395ae2ae97b80fdf2d sig mcxspear 68x51
-574d967124597745970e7c94 simonov sks 762x39
-63920105a83e15700a00f168 sog voodoohawk melee
-60339954d62c9b14ed777c06 soyuz stm9 9x19
-5aafa857e5b5b00018480968 springfield m1a 762x51
-5a17f98cfcdbcb0980087290 stechkin aps 9x18
-5abccb7dd8ce87001773e277 stechkin apb 9x18
-62e7c4fba689e8c9c50dfc38 steyr aug_a1 556x45
-63171672192e68c5460cebc5 steyr aug_a3 556x45
-6718817435e3cfd9550d2c27 steyr aug_a3 556x45
-5fc22d7c187fea44d52eda44 sword mk18 338lapua
-56e0598dd2720bb5668b45a6 tochmash pb 9x18
-57838ad32459774a17445cd2 tochmash vss 9x39
-57c44b372459772d2b39b8ce tochmash asval 9x39
-59f98b4986f7746f546d2cef tochmash sr1mp 9x21
-62e14904c2699c0ec93adc47 tochmash sr2m 9x21
-651450ce0e00edc794068371 tochmash sr3m 9x39
-571a12c42459771f627b58a0 tokarev tt33 762x25
-5b3b713c5acfc4330140bd8d tokarev ttgolden 762x25
-5ea03f7400685063ec28bfa8 tokarev ppsh41 762x25
-5a38e6bac4a2826c6e06d79b toz 106 20g
-5e848cc2988a8701445df1e8 toz ks23m 23x75
-65ca457b4aafb5d7fc0dcb5d unitedcutlery m48kukri melee
-65fb023261d5829b2d090755 usordnance m60e4 762x51
-661ceb1b9311543c7104149b usordnance m60e6 762x51
-661cec09b2c6356b4d0c7a36 usordnance m60e6 762x51
-66015072e9f84d5680039678 ussr toygun 20x1
-676176d362e0497044079f4c xproducts x17 762x51
-576a581d2459771e7b1bc4f1 yarygin mp443 9x19
-5d52cc5ba4b9367408500062 zid ags30 30x29
-620109578d82e67e7911abf2 zid sp81 26x75
-657857faeff4c850222dff1b zid pktm 762x54r
-5710c24ad2720bc3458b45a3 NULL f1 frag
-58d3db5386f77426186285a0 NULL rgd5 frag
-58d3db5386f77426186285a0 NULL m67 frag
-5a0c27731526d80618476ac4 NULL zarya stun
-5a2a57cfc4a2826c6e06d44a NULL rgd2 smoke
-5e32f56fcb6d5863cc5e5ee4 NULL vog17 frag
-5e340dcdcb6d5863cc5e5efb NULL vog25 frag
-617aa4dd8166f034d57de9c5 NULL m18 smoke
-617fd91e5539a84ec44ce155 NULL rgn impact
-618a431df1eb8e24b8741deb NULL rgo impact
-619256e5f8af2c1a4e1f5d92 NULL m7290 flash
-66dae7cbeb28f0f96809f325 NULL v40 frag
+// Time
+$assets/sounds/time/
+AM am
+PM pm
+H hours
+M minutes
+S seconds
+curtime thetimeisnow
+raidtime timeremaining
 
-// Tell parser we're doing 'Types' now
-// This section identifies ammo types
-// Fixed length of 3 audioclips when parsed so the user can selectively disable caliber or extendedName
-// These MUST follow this format: itemId caliber name extendedName
-$Types
+// Weapons
+$assets/sounds/weapons/
+627e14b21713922ded6f2c15 maker_accuracyinternational model_axmc
+674d6121c09f69dfb201a888 maker_aklysdefense model_velociraptor
+54491c4f4bdc2db1078b4568 maker_baikal model_mp133
+5580223e4bdc2d1c128b457f maker_baikal model_mp43
+56dee2bdd2720bc8328b4567 maker_baikal model_mp153
+606dae0ab0e443224b421bb7 maker_baikal model_mp155
+61f7c9e189e6fb1a5e3ea78d maker_baikal model_mp18
+64748cb8de82c85eaf0a273a maker_baikal model_mp43short
+57e26ea924597715ca604a09 maker_bars model_a-2607
+57e26fc7245977162a14b800 maker_bars model_a-2607
+6259b864ebedf17603599e88 maker_benelli model_m3super90
+5cadc190ae921500103bb3b6 maker_beretta model_m9a3
+5de7bd7bfd6b4e6e2276dc25 maker_bt model_mp9n
+5e00903ae9dc277128008b87 maker_bt model_mp9
+61a4c8884f95bc3b2c5dc96f maker_chiappa model_rhino50ds
+624c2e8614da335f1e034d8c maker_chiappa model_rhino200ds
+60db29ce99594040e04c4a27 maker_ckib model_mts255
+606587252535c57a13424cfd maker_cmmg model_mk47
+5447a9cd4bdc2dbd208b4567 maker_colt model_m4a1
+5e81c3cbac2bb513793cdc75 maker_colt model_m1911a1
+5f36a0e5fbf956000b716b65 maker_colt model_m45a1
+6513ef33e06849f06c0957ca maker_degtyarov model_rpd
+65268d8ecb944ff1e90ea385 maker_degtyarov model_rpdn
+5b0bbe4e5acfc40dc528a72d maker_dsa model_sa58
+5c488a752e221602b412af63 maker_dt model_mdr
+5dcbd56fdbd3d91b3e5468d5 maker_dt model_mdr
+5cc82d76e24e8d00134b4b83 maker_fn model_p90
+5d3eb3b0a4b93615055e84d2 maker_fn model_fiveseven
+5d67abc1a4b93614ec50137f maker_fn model_fiveseven
+5e81ebcd8e146c7080625e15 maker_fn model_40gl
+6165ac306ef05c2ce828ef74 maker_fn model_scarh
+6183afd850224f204c1da514 maker_fn model_scarh
+6184055050224f204c1da540 maker_fn model_scarl
+618428466ef05c2ce828f218 maker_fn model_scarl
+5a7ae0c351dfba0017554310 maker_glock model_seventeen
+5b1fa9b25acfc40018633c01 maker_glock model_eighteenc
+63088377b5cd696784087147 maker_glock model_nineteenx
+5e32f56fcb6d5863cc5e5ee4 maker_NULL model_vog17
+5e340dcdcb6d5863cc5e5efb maker_NULL model_vog25
+5926bb2186f7744b1c6c6e60 maker_hk model_mp5
+5ba26383d4351e00334c93d9 maker_hk model_mp7a1
+5bb2475ed4351e00853264e3 maker_hk model_416a5
+5bd70322209c4d00d7167b8f maker_hk model_mp7a2
+5d2f0d8048f0356c925bc3b0 maker_hk model_mp5k
+5fc3e272f8b6a877a729eac5 maker_hk model_ump45
+6176aca650224f204c1da3fb maker_hk model_g28
+6193a720f8ee7e52e42109ed maker_hk model_usp45
+623063e994fc3f7b302a9696 maker_hk model_g36
+6680304edadb7aa61d00cef0 maker_iwi model_uzipro
+668e71a8dadf42204c032ce1 maker_iwi model_uzipro
+66992b349950f5f4cd06029f maker_iwi model_uzi
+55801eed4bdc2d89578b4588 maker_izhmash model_sv98
+5644bd2b4bdc2d3b4c8b4572 maker_kalashnikov model_ak74n
+57dc2fa62459775949412633 maker_kalashnikov model_aks74u
+583990e32459771419544dd2 maker_kalashnikov model_aks74un
+5839a40f24597726f856b511 maker_kalashnikov model_aks74ub
+59984ab886f7743e98271174 maker_kalashnikov model_pp1901vityaz
+59d6088586f774275f37482f maker_kalashnikov model_akm
+59f9cabd86f7743a10721f46 maker_kalashnikov model_saiga9
+59ff346386f77477562ff5e2 maker_kalashnikov model_akms
+5a0ec13bfcdbcb00165aa685 maker_kalashnikov model_akmn
+5ab8e9fcd8ce870019439434 maker_kalashnikov model_aks74n
+5abcbc27d8ce8700182eceeb maker_kalashnikov model_akmsn
+5ac4cd105acfc40016339859 maker_kalashnikov model_ak74m
+5ac66cb05acfc40198510a10 maker_kalashnikov model_ak101
+5ac66d015acfc400180ae6e4 maker_kalashnikov model_ak102
+5ac66d2e5acfc43b321d4b53 maker_kalashnikov model_ak103
+5ac66d725acfc43b321d4b60 maker_kalashnikov model_ak104
+5ac66d9b5acfc4001633997a maker_kalashnikov model_ak105
+5ae08f0a5acfc408fb1398a1 maker_izhmash model_mosinsniper
+5bfd297f0db834001a669119 maker_izhmash model_mosininfantry
+5beed0f50db834001c062b12 maker_kalashnikov model_rpk16
+5bf3e03b0db834001d2c4a9c maker_kalashnikov model_ak74
+5bf3e0490db83400196199af maker_kalashnikov model_aks74
+5c46fbd72e2216398b5a8c9c maker_dragunov model_svds
+6410733d5dd49d77bd07847e maker_tokarev model_avt40
+643ea5b23db6f9f57107d9fd maker_tokarev model_svt40
+5df8ce05b11454561e39243b maker_kac model_sr25
+6499849fc93611967b034949 maker_kalashnikov model_ak12
+64ca3d3954fc657e230529cc maker_kalashnikov model_pkp
+64637076203536ad5600c990 maker_kalashnikov model_pkm
+674fe9a75e51f1c47c04ec23 maker_kalashnikov model_saiga12k
+576165642459773c7a400233 maker_kalashnikov model_saiga12k
+5cadfbf7ae92152ac412eeef maker_kbp model_ash12
+633ec7c2a6918cb895019c6c maker_kbp model_rsh12
+644674a13d52156624001fbc maker_kbp model_9a91
+645e0c6b3b381ede770e1cc9 maker_kbp model_vsk94
+5f2a9575926fd9352339381f maker_keltec model_rfb
+5fb64bc92b1b027b1f50bcf2 maker_kriss model_vector45
+5fc3f2d5900b1d5091531e57 maker_kriss model_vector9mm
+602a9740da11d6478d5a06dc maker_lebedev model_pl15
+588892092459774ac91d4b11 maker_lobaev model_dvl10
+5d43021ca4b9362eab4b5e25 maker_lonestar model_tx15
+668fe5a998b5ad715703ddd6 maker_magnumresearch model_deserteagle
+669fa39b48fc9f8db6035a0c maker_magnumresearch model_deserteagle
+669fa3d876116c89840b1217 maker_magnumresearch model_deserteagle
+669fa3f88abd2662d80eee77 maker_magnumresearch model_deserteagle
+669fa409933e898cce0c2166 maker_magnumresearch model_deserteagle
+5448bd6b4bdc2dfc2f8b4569 maker_makarov model_pm
+579204f224597773d619e051 maker_makarov model_pm_threaded
+6275303a9f372d6ea97f9ec7 maker_milkor model_m32a1
+5bffdd7e0db834001b734a1a maker_millerbros model_melee_m2
+587e02ff24597743df3deaeb maker_molot model_opsks
+59e6152586f77473dc057aa1 maker_molot model_veprkm
+59e6687d86f77411d949b251 maker_molot model_vpo209
+5c07c60e0db834002330051f maker_molot model_adar215
+5c501a4d2e221602b412b540 maker_molot model_veprhunter
+5de652c31b7e3716273428be maker_molot model_vpo215
+5e870397991fd70db46995c8 maker_mossberg model_m590a1
+66ffa9b66e19cc902401c5e8 maker_mps model_aa12gen1
+67124dcfa3541f2a1f0e788b maker_mps model_aa12gen2
+57d14d2524597714373db789 model_pp91kedr
+57f3c6bd24597738e730fa2f model_pp91kedrb
+57f4c844245977379d5c14d1 model_pp9klin
+5c0126f40db834002a125382 model_redrebel
+5cdeb229d7f00c000e7ce174 model_nsv
+5df24cf80dee1b22f862e9bc maker_orsis model_t5000m
+5a367e5dc4a282000e49738f maker_remington model_rsass
+5a7828548dc32e5a9c28b516 maker_remington model_m870
+5bfea6e90db834001b7347f3 maker_remington model_m700
+628a60ae6b1d481ff772e9c8 maker_rifledynamics model_rd704
+628b5638ad252a16da6dd245 maker_sag model_ak545
+628b9c37a733087d0d7fe84b maker_sag model_ak545short
+673cab3e03c6a20581028bc1 maker_sako model_trgm10
+674d90b55704568fe60bc8f5 maker_semin model_pushdagger
+56d59856d2720bd8418b456a maker_sig model_p226r
+58948c8e86f77409493f7266 maker_sig model_mpx
+5fbcc1d9016cce60e8341ab3 maker_sig model_mcx
+65290f395ae2ae97b80fdf2d maker_sig model_mcxspear
+574d967124597745970e7c94 maker_simonov model_sks
+63920105a83e15700a00f168 maker_sog model_voodoohawk
+60339954d62c9b14ed777c06 maker_soyuz model_stm9
+5aafa857e5b5b00018480968 maker_springfield model_m1a
+5a17f98cfcdbcb0980087290 maker_stechkin model_aps
+5abccb7dd8ce87001773e277 maker_stechkin model_apb
+62e7c4fba689e8c9c50dfc38 maker_steyr model_aug_a1
+63171672192e68c5460cebc5 maker_steyr model_aug_a3
+6718817435e3cfd9550d2c27 maker_steyr model_aug_a3
+5fc22d7c187fea44d52eda44 maker_sword model_mk18
+56e0598dd2720bb5668b45a6 maker_tochmash model_pb
+57838ad32459774a17445cd2 maker_tochmash model_vss
+57c44b372459772d2b39b8ce maker_tochmash model_asval
+59f98b4986f7746f546d2cef maker_tochmash model_sr1mp
+62e14904c2699c0ec93adc47 maker_tochmash model_sr2m
+651450ce0e00edc794068371 maker_tochmash model_sr3m
+571a12c42459771f627b58a0 maker_tokarev model_tt33
+5b3b713c5acfc4330140bd8d maker_tokarev model_ttgolden
+5ea03f7400685063ec28bfa8 maker_tokarev model_ppsh41
+5a38e6bac4a2826c6e06d79b maker_toz model_106
+5e848cc2988a8701445df1e8 maker_toz model_ks23m
+65ca457b4aafb5d7fc0dcb5d maker_unitedcutlery model_m48kukri
+65fb023261d5829b2d090755 maker_usordnance model_m60e4
+661ceb1b9311543c7104149b maker_usordnance model_m60e6
+661cec09b2c6356b4d0c7a36 maker_usordnance model_m60e6
+66015072e9f84d5680039678 maker_ussr model_toygun
+676176d362e0497044079f4c maker_xproducts model_x17
+576a581d2459771e7b1bc4f1 maker_yarygin model_mp443
+5d52cc5ba4b9367408500062 maker_zid model_ags30
+620109578d82e67e7911abf2 maker_zid model_sp81
+657857faeff4c850222dff1b maker_zid model_pktm
+5710c24ad2720bc3458b45a3 model_f1 type_frag
+58d3db5386f77426186285a0 model_rgd5 type_frag
+58d3db5386f77426186285a0 model_m67 type_frag
+5a0c27731526d80618476ac4 model_zarya type_stun
+5a2a57cfc4a2826c6e06d44a model_rgd2 type_smoke
+5e32f56fcb6d5863cc5e5ee4 model_vog17 type_frag
+5e340dcdcb6d5863cc5e5efb model_vog25 type_frag
+617aa4dd8166f034d57de9c5 model_m18 type_smoke
+617fd91e5539a84ec44ce155 model_rgn type_impact
+618a431df1eb8e24b8741deb model_rgo type_impact
+619256e5f8af2c1a4e1f5d92 model_m7290 type_flash
+66dae7cbeb28f0f96809f325 model_v40 type_frag
 
-5cadf6ddae9215051e1c23b2 127x55 ps12 NULL
-5cadf6e5ae921500113bb973 127x55 ps12a NULL
-5cadf6eeae921500134b2799 127x55 ps12b NULL
-560d5e524bdc2d25448b4571 12ga buckshot7mm NULL
-5d6e6772a4b936088465b17c 12ga buckshot525mm NULL
-5d6e67fba4b9361bc73bc779 12ga buckshot65mm NULL
-5d6e6806a4b936088465b17e 12ga buckshotmagnum NULL
-5d6e6869a4b9361c140bcfde 12ga grizzly40slug NULL
-5d6e6891a4b9361bd473feea 12ga poleva3 NULL
-5d6e689ca4b9361bc8618956 12ga poleva6u NULL
-5d6e68a8a4b9360b6c0d54e2 12ga ap20 NULL
-5d6e68b3a4b9361bca7e50b5 12ga copperslug NULL
-5d6e68c4a4b9361b93413f79 12ga 50bmgslug NULL
-5d6e68d1a4b93622fe60e845 12ga superformancehp NULL
-5d6e68dea4b9361bcc29e659 12ga dualsabotslug NULL
-5d6e68e6a4b9361c140bcfe0 12ga ftxslug NULL
-5d6e6911a4b9361bd5780d52 12ga flechette NULL
-64b8ee384b75259c590fa89b 12ga piranha NULL
-58820d1224597753c90aeb13 12ga slug NULL
-5c0d591486f7744c505b416f 12ga rip NULL
-5a38ebd9c4a282000d722a5b 20ga buckshot75mm NULL
-5d6e695fa4b936359b35d852 20ga buckshot56mm NULL
-5d6e69b9a4b9361bc8618958 20ga buckshot62mm NULL
-5d6e69c7a4b9360b6c0d54e4 20ga buckshot73mm NULL
-5d6e6a05a4b93618084f58d0 20ga starslug NULL
-5d6e6a42a4b9364f07165f52 20ga poleva6u NULL
-5d6e6a53a4b9361bd473feec 20ga poleva3 NULL
-5d6e6a5fa4b93614ec501745 20ga devastatorslug NULL
-660137d8481cc6907a0c5cda 20ga tssap NULL
-660137ef76c1b56143052be8 20ga dgs NULL
-6601380580e77cfd080e3418 20ga flechette NULL
-5fbe3ffdf8b6a877a729ea82 300blackout bcpfmj NULL
-5fd20ff893a8961fc660a954 300blackout ap NULL
-6196364158ef8c428c287d9f 300blackout vmax NULL
-619636be6db0f2477964e710 300blackout m62 tracer
-64b8725c4b75259c590fa899 300blackout cbj NULL
-6196365d58ef8c428c287da1 300blackout 300whisper NULL
-5fc275cf85fd526b824a571a 338lapua fmj NULL
-5fc382a9d724d907e2077dab 338lapua ap NULL
-5fc382b6d6fa9c00c571bbc3 338lapua tacx NULL
-5fc382c1016cce60e8341b20 338lapua ucw NULL
-62330b3ed4dc74626d570b95 357magnum fmj NULL
-62330bfadc5883093563729b 357magnum hp NULL
-62330c18744e5e31df12f516 357magnum jhp NULL
-62330c40bdd19b369e1e53d1 357magnum sp NULL
-59e6542b86f77411dc52a77a 366tkm fmj NULL
-59e655cb86f77411dc52a77b 366tkm eko NULL
-59e6658b86f77411d949b250 366tkm geksa NULL
-5f0596629e22f464da6bbdd9 366tkm apm NULL
-5ede4739e0350d05467f73e8 40mm m406 NULL
-5ede47405b097655935d7d16 40mm m441 NULL
-5ede474b0c226a66f5402622 40mm m381 NULL
-5ede475339ee016e8c534742 40mm m576 NULL
-5ede475b549eed7c6d5c18fb 40mm m386 NULL
-5ede47641cf3836a88318df1 40mm m716 NULL
-5f0c892565703e5c461894e9 40mm m433 NULL
-5e81f423763d9f754677bf2e 45acp matchfmj NULL
-5ea2a8e200685063ec28c05a 45acp rip NULL
-5efb0cabfb3e451d70735af5 45acp ap NULL
-5efb0d4f4bc50b58e81710f3 45acp lasermatchfmj tracer
-5efb0fc6aeb21837e749c801 45acp hydrashok NULL
-5ba2678ad4351e44f824b344 46x30 fmjsx NULL
-5ba26812d4351e003201fef1 46x30 actionsx NULL
-5ba26835d4351e0035628ff5 46x30 apsx NULL
-5ba26844d4351e00334c9475 46x30 subsonicsx NULL
-64b6979341772715af0f9c39 46x30 jsp NULL
-5e85a9a6eacf8c039e4e2ac1 4ga shrap10 NULL
-5e85a9f4add9fe03027d9bf1 4ga zvezda NULL
-5e85aa1a988a8701445df1f5 4ga barrikada NULL
-5f647f31b6238e5dd066e196 4ga shrap25 NULL
-668fe62ac62660a5d8071446 50ae fmj NULL
-66a0d1c87d0d369e270bb9de 50ae jhp NULL
-66a0d1e0ed648d72fe064d06 50ae coppersolid NULL
-66a0d1f88486c69fce00fdf6 50ae jsp NULL
-56dfef82d2720bbd668b4567 545x39 bp NULL
-56dff026d2720bb8668b4567 545x39 bs NULL
-56dff061d2720bb5668b4567 545x39 bt tracer
-56dff0bed2720bb0668b4567 545x39 fmj NULL
-56dff216d2720bbd668b4568 545x39 hp NULL
-56dff2ced2720bb4668b4567 545x39 pp NULL
-56dff338d2720bbd668b4569 545x39 prs NULL
-56dff3afd2720bba668b4567 545x39 ps NULL
-56dff421d2720b5f5a8b4567 545x39 sp NULL
-56dff4a2d2720bbd668b456a 545x39 t tracer
-56dff4ecd2720b5f5a8b4568 545x39 us subsonic
-5c0d5e4486f77478390952fe 545x39 ppbs NULL
-61962b617c6c7b169525f168 545x39 7n40 NULL
-54527a984bdc2d4e668b4567 556x45 m855 NULL
-54527ac44bdc2d36668b4567 556x45 m855a1 NULL
-59e68f6f86f7746c9f75e846 556x45 m856 tracer
-59e6906286f7746c9f75e847 556x45 m856a1 tracer
-59e690b686f7746c9f75e848 556x45 m995 NULL
-59e6918f86f7746c9f75e849 556x45 rrlp NULL
-59e6920f86f77411d82aa167 556x45 fmj NULL
-59e6927d86f77411da468256 556x45 hp NULL
-5c0d5ae286f7741e46554302 556x45 warmageddon NULL
-60194943740c5d77f6705eea 556x45 sost NULL
-601949593ae8f707c4608daa 556x45 ssa-ap NULL
-5cc80f38e4a949001152b560 57x28 ss190 NULL
-5cc80f53e4a949000e1ea4f8 57x28 l191 tracer
-5cc80f67e4a949035e43bbba 57x28 sb193 subsonic
-5cc80f79e4a949033c7343b2 57x28 ss198lf NULL
-5cc80f8fe4a949033b0224a2 57x28 ss197sr NULL
-5cc86832d7f00c000d3a6e6c 57x28 r37f NULL
-5cc86840d7f00c002412c56c 57x28 r37x NULL
-6529243824cbe3c74a05e5c1 68x51 sighybrid NULL
-6529302b8c26af6326029fb7 68x51 sigfmj NULL
-5735fdcd2459776445391d61 762x25 akbs NULL
-5735ff5c245977640e39ba7e 762x25 fmj43 NULL
-573601b42459776410737435 762x25 lrn NULL
-573602322459776445391df1 762x25 lrnpc NULL
-5736026a245977644601dc61 762x25 p NULL
-573603562459776000000000 762x25 pst NULL
-573603c924597764442bd9cb 762x25 t tracer
-5656d7c34bdc2d9d198b4587 762x39 ps NULL
-59e0d99486f7744a32234762 762x39 bp NULL
-59e4cf5286f7741778269d8a 762x39 t45m1 tracer
-59e4d24686f7741776641ac7 762x39 us subsonic
-59e4d3d286f774176a36250a 762x39 hp NULL
-601aa3d2b2bcb34913271e6d 762x39 maiap NULL
-64b7af434b75259c590fa893 762x39 pp NULL
-64b7af5a8532cf95ee0a0dbd 762x39 fmj NULL
-64b7af734b75259c590fa895 762x39 sp NULL
-58dd3ad986f77403051cba8f 762x51 m80 NULL
-5a6086ea4f39f99cd479502f 762x51 m61 NULL
-5a608bf24f39f98ffc77720e 762x51 m62 tracer
-5e023e53d4353e3302577c4c 762x51 bcpfmj NULL
-5e023e6e34d52a55c3304f71 762x51 tcwsp NULL
-5e023e88277cce2b522ff2b1 762x51 ultranosler NULL
-5efb0c1bd79ff02a1f5e68d9 762x51 m993 NULL
-6768c25aa7b238f14a08d3f6 762x51 m80a1 NULL
-59e77a2386f7742ee578960a 762x54r ps NULL
-560d61e84bdc2da74d8b4571 762x54r snb NULL
-5887431f2459777e1612938f 762x54r lps NULL
-5e023cf8186a883be655e54f 762x54r t46m tracer
-5e023d34e8a400319a28ed44 762x54r bt tracer
-5e023d48186a883be655e551 762x54r bs NULL
-64b8f7968532cf95ee0a0dbf 762x54r fmj NULL
-64b8f7b5389d7ffd620ccba2 762x54r spbt NULL
-64b8f7c241772715af0f9c3d 762x54r hpbt NULL
-573718ba2459775a75491131 9x18 bzht NULL
-573719762459775a626ccbc1 9x18 p NULL
-573719df2459775a626ccbc2 9x18 pbm NULL
-57371aab2459775a77142f22 9x18 pmm NULL
-57371b192459775a9f58a5e0 9x18 ppe NULL
-57371e4124597760ff7b25f1 9x18 ppt NULL
-57371eb62459776125652ac1 9x18 prs NULL
-57371f2b24597761224311f1 9x18 psppo NULL
-57371f8d24597761006c6a81 9x18 pso NULL
-5737201124597760fc4431f1 9x18 pst NULL
-5737207f24597760ff7b25f2 9x18 psv NULL
-573720e02459776143012541 9x18 rg028 NULL
-57372140245977611f70ee91 9x18 sp7 NULL
-5737218f245977612125ba51 9x18 sp8 NULL
-56d59d3ad2720bdb418b4577 9x19 pst NULL
-58864a4f2459770fcc257101 9x19 pso NULL
-5a3c16fe86f77452b62de32a 9x19 lugercci NULL
-5c0d56a986f774449d5de529 9x19 rip NULL
-5c3df7d588a4501f290594e5 9x19 gt tracer
-5c925fa22e221601da359b7b 9x19 ap63 NULL
-5efb0da7a29a85116f6ea05f 9x19 pbp NULL
-5efb0e16aeb21837e749c7ff 9x19 quakemaker NULL
-64b7bbb74b75259c590fa897 9x19 m882 NULL
-5a269f97c4a282000b151807 9x21 ps NULL
-5a26abfac4a28232980eabff 9x21 p NULL
-5a26ac06c4a282000c5a90a8 9x21 pe NULL
-5a26ac0ec4a28200741e1e18 9x21 bt NULL
-6576f4708ca9c4381d16cd9d 9x21 7n42 NULL
-6576f93989f0062e741ba952 9x21 7u4 NULL
-57a0dfb82459774d3078b56c 9x39 sp5 NULL
-57a0e5022459774d1673f889 9x39 sp6 NULL
-5c0d668f86f7747ccb7f13b2 9x39 spp NULL
-5c0d688c86f77413ae3407b2 9x39 bp NULL
-61962d879bb3d20b0946d385 9x39 pab9 NULL
-6576f96220d53a5b8f3e395e 9x39 fmj NULL
-635267f063651329f75a4ee8 NULL acidgreenflare NULL
-62389aaba63f32501b1b444f NULL greenflare NULL
-62389ba9a63f32501b1b4451 NULL redflare NULL
-66d98233302686954b0c6f81 NULL rsp30blue NULL
-624c09cfbc2e27219346d955 NULL rsp30red NULL
-624c09da2cec124eb67c1046 NULL rsp30white NULL
-624c09e49b98e019a3315b66 NULL rsp30yellow NULL
-66d9f3047b82b9a9aa055d81 NULL rsp30yellow NULL
-62389bc9423ed1685422dc57 NULL whiteflare NULL
-62389be94d5d474bf712e709 NULL yellowflare NULL
-624c0b3340357b5f566e8766 NULL rsp30yellow flare
-66d9f1abb16d9aacf5068468 NULL rsp30yellow flare
-6217726288ed9f0845317459 NULL rsp30green flare
-62178c4d4ecf221597654e3d NULL rsp30red flare
-62178be9d0050232da3485d9 NULL rsp30white flare
+// Ammo types
+5cadf6ddae9215051e1c23b2 type_ps12
+5cadf6e5ae921500113bb973 type_ps12a
+5cadf6eeae921500134b2799 type_ps12b
+560d5e524bdc2d25448b4571 type_buckshot7mm
+5d6e6772a4b936088465b17c type_buckshot525mm
+5d6e67fba4b9361bc73bc779 type_buckshot65mm
+5d6e6806a4b936088465b17e type_buckshotmagnum
+5d6e6869a4b9361c140bcfde type_grizzly40slug
+5d6e6891a4b9361bd473feea type_poleva3
+5d6e689ca4b9361bc8618956 type_poleva6u
+5d6e68a8a4b9360b6c0d54e2 type_ap20
+5d6e68b3a4b9361bca7e50b5 type_copperslug
+5d6e68c4a4b9361b93413f79 type_50bmgslug
+5d6e68d1a4b93622fe60e845 type_superformancehp
+5d6e68dea4b9361bcc29e659 type_dualsabotslug
+5d6e68e6a4b9361c140bcfe0 type_ftxslug
+5d6e6911a4b9361bd5780d52 type_flechette
+64b8ee384b75259c590fa89b type_piranha
+58820d1224597753c90aeb13 type_slug
+5c0d591486f7744c505b416f type_rip
+5a38ebd9c4a282000d722a5b type_buckshot75mm
+5d6e695fa4b936359b35d852 type_buckshot56mm
+5d6e69b9a4b9361bc8618958 type_buckshot62mm
+5d6e69c7a4b9360b6c0d54e4 type_buckshot73mm
+5d6e6a05a4b93618084f58d0 type_starslug
+5d6e6a42a4b9364f07165f52 type_poleva6u
+5d6e6a53a4b9361bd473feec type_poleva3
+5d6e6a5fa4b93614ec501745 type_devastatorslug
+660137d8481cc6907a0c5cda type_tssap
+660137ef76c1b56143052be8 type_dgs
+6601380580e77cfd080e3418 type_flechette
+5fbe3ffdf8b6a877a729ea82 type_bcpfmj
+5fd20ff893a8961fc660a954 type_ap
+6196364158ef8c428c287d9f type_vmax
+619636be6db0f2477964e710 type_m62
+64b8725c4b75259c590fa899 type_cbj
+6196365d58ef8c428c287da1 type_300whisper
+5fc275cf85fd526b824a571a type_fmj
+5fc382a9d724d907e2077dab type_ap
+5fc382b6d6fa9c00c571bbc3 type_tacx
+5fc382c1016cce60e8341b20 type_ucw
+62330b3ed4dc74626d570b95 type_fmj
+62330bfadc5883093563729b type_hp
+62330c18744e5e31df12f516 type_jhp
+62330c40bdd19b369e1e53d1 type_sp
+59e6542b86f77411dc52a77a type_fmj
+59e655cb86f77411dc52a77b type_eko
+59e6658b86f77411d949b250 type_geksa
+5f0596629e22f464da6bbdd9 type_apm
+5ede4739e0350d05467f73e8 type_m406
+5ede47405b097655935d7d16 type_m441
+5ede474b0c226a66f5402622 type_m381
+5ede475339ee016e8c534742 type_m576
+5ede475b549eed7c6d5c18fb type_m386
+5ede47641cf3836a88318df1 type_m716
+5f0c892565703e5c461894e9 type_m433
+5e81f423763d9f754677bf2e type_matchfmj
+5ea2a8e200685063ec28c05a type_rip
+5efb0cabfb3e451d70735af5 type_ap
+5efb0d4f4bc50b58e81710f3 type_lasermatchfmj
+5efb0fc6aeb21837e749c801 type_hydrashok
+5ba2678ad4351e44f824b344 type_fmjsx
+5ba26812d4351e003201fef1 type_actionsx
+5ba26835d4351e0035628ff5 type_apsx
+5ba26844d4351e00334c9475 type_subsonicsx
+64b6979341772715af0f9c39 type_jsp
+5e85a9a6eacf8c039e4e2ac1 type_shrap10
+5e85a9f4add9fe03027d9bf1 type_zvezda
+5e85aa1a988a8701445df1f5 type_barrikada
+5f647f31b6238e5dd066e196 type_shrap25
+668fe62ac62660a5d8071446 type_fmj
+66a0d1c87d0d369e270bb9de type_jhp
+66a0d1e0ed648d72fe064d06 type_coppersolid
+66a0d1f88486c69fce00fdf6 type_jsp
+56dfef82d2720bbd668b4567 type_bp
+56dff026d2720bb8668b4567 type_bs
+56dff061d2720bb5668b4567 type_bt
+56dff0bed2720bb0668b4567 type_fmj
+56dff216d2720bbd668b4568 type_hp
+56dff2ced2720bb4668b4567 type_pp
+56dff338d2720bbd668b4569 type_prs
+56dff3afd2720bba668b4567 type_ps
+56dff421d2720b5f5a8b4567 type_sp
+56dff4a2d2720bbd668b456a type_t type_tracer
+56dff4ecd2720b5f5a8b4568 type_us type_subsonic
+5c0d5e4486f77478390952fe type_ppbs
+61962b617c6c7b169525f168 type_7n40
+54527a984bdc2d4e668b4567 type_m855
+54527ac44bdc2d36668b4567 type_m855a1
+59e68f6f86f7746c9f75e846 type_m856 type_tracer
+59e6906286f7746c9f75e847 type_m856a1 type_tracer
+59e690b686f7746c9f75e848 type_m995
+59e6918f86f7746c9f75e849 type_rrlp
+59e6920f86f77411d82aa167 type_fmj
+59e6927d86f77411da468256 type_hp
+5c0d5ae286f7741e46554302 type_warmageddon
+60194943740c5d77f6705eea type_sost
+601949593ae8f707c4608daa type_ssa-ap
+5cc80f38e4a949001152b560 type_ss190
+5cc80f53e4a949000e1ea4f8 type_l191
+5cc80f67e4a949035e43bbba type_sb193
+5cc80f79e4a949033c7343b2 type_ss198lf
+5cc80f8fe4a949033b0224a2 type_ss197sr
+5cc86832d7f00c000d3a6e6c type_r37f
+5cc86840d7f00c002412c56c type_r37x
+6529243824cbe3c74a05e5c1 type_sighybrid
+6529302b8c26af6326029fb7 type_sigfmj
+5735fdcd2459776445391d61 type_akbs
+5735ff5c245977640e39ba7e type_fmj43
+573601b42459776410737435 type_lrn
+573602322459776445391df1 type_lrnpc
+5736026a245977644601dc61 type_p
+573603562459776000000000 type_pst
+573603c924597764442bd9cb type_t
+5656d7c34bdc2d9d198b4587 type_ps
+59e0d99486f7744a32234762 type_bp
+59e4cf5286f7741778269d8a type_t45m1
+59e4d24686f7741776641ac7 type_us
+59e4d3d286f774176a36250a type_hp
+601aa3d2b2bcb34913271e6d type_maiap
+64b7af434b75259c590fa893 type_pp
+64b7af5a8532cf95ee0a0dbd type_fmj
+64b7af734b75259c590fa895 type_sp
+58dd3ad986f77403051cba8f type_m80
+5a6086ea4f39f99cd479502f type_m61
+5a608bf24f39f98ffc77720e type_m62
+5e023e53d4353e3302577c4c type_bcpfmj
+5e023e6e34d52a55c3304f71 type_tcwsp
+5e023e88277cce2b522ff2b1 type_ultranosler
+5efb0c1bd79ff02a1f5e68d9 type_m993
+6768c25aa7b238f14a08d3f6 type_m80a1
+59e77a2386f7742ee578960a type_ps
+560d61e84bdc2da74d8b4571 type_snb
+5887431f2459777e1612938f type_lps
+5e023cf8186a883be655e54f type_t46m
+5e023d34e8a400319a28ed44 type_bt
+5e023d48186a883be655e551 type_bs
+64b8f7968532cf95ee0a0dbf type_fmj
+64b8f7b5389d7ffd620ccba2 type_spbt
+64b8f7c241772715af0f9c3d type_hpbt
+573718ba2459775a75491131 type_bzht
+573719762459775a626ccbc1 type_p
+573719df2459775a626ccbc2 type_pbm
+57371aab2459775a77142f22 type_pmm
+57371b192459775a9f58a5e0 type_ppe
+57371e4124597760ff7b25f1 type_ppt
+57371eb62459776125652ac1 type_prs
+57371f2b24597761224311f1 type_psppo
+57371f8d24597761006c6a81 type_pso
+5737201124597760fc4431f1 type_pst
+5737207f24597760ff7b25f2 type_psv
+573720e02459776143012541 type_rg028
+57372140245977611f70ee91 type_sp7
+5737218f245977612125ba51 type_sp8
+56d59d3ad2720bdb418b4577 type_pst
+58864a4f2459770fcc257101 type_pso
+5a3c16fe86f77452b62de32a type_lugercci
+5c0d56a986f774449d5de529 type_rip
+5c3df7d588a4501f290594e5 type_gt
+5c925fa22e221601da359b7b type_ap63
+5efb0da7a29a85116f6ea05f type_pbp
+5efb0e16aeb21837e749c7ff type_quakemaker
+64b7bbb74b75259c590fa897 type_m882
+5a269f97c4a282000b151807 type_ps
+5a26abfac4a28232980eabff type_p
+5a26ac06c4a282000c5a90a8 type_pe
+5a26ac0ec4a28200741e1e18 type_bt type_tracer
+6576f4708ca9c4381d16cd9d type_7n42
+6576f93989f0062e741ba952 type_7u4 type_subsonic
+57a0dfb82459774d3078b56c type_sp5
+57a0e5022459774d1673f889 type_sp6
+5c0d668f86f7747ccb7f13b2 type_spp
+5c0d688c86f77413ae3407b2 type_bp
+61962d879bb3d20b0946d385 type_pab9
+6576f96220d53a5b8f3e395e type_fmj
+635267f063651329f75a4ee8 type_acidgreenflare
+62389aaba63f32501b1b444f type_greenflare
+62389ba9a63f32501b1b4451 type_redflare
+66d98233302686954b0c6f81 type_rsp30blue
+624c09cfbc2e27219346d955 type_rsp30red
+624c09da2cec124eb67c1046 type_rsp30white
+624c09e49b98e019a3315b66 type_rsp30yellow
+66d9f3047b82b9a9aa055d81 type_rsp30yellow
+62389bc9423ed1685422dc57 type_whiteflare
+62389be94d5d474bf712e709 type_yellowflare
+624c0b3340357b5f566e8766 type_rsp30yellow type_flare
+66d9f1abb16d9aacf5068468 type_rsp30yellow type_flare
+6217726288ed9f0845317459 type_rsp30green type_flare
+62178c4d4ecf221597654e3d type_rsp30red type_flare
+62178be9d0050232da3485d9 type_rsp30white type_flare
+
 
