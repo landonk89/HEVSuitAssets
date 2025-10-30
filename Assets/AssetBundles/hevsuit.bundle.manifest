@@ -1,15 +1,15 @@
 ManifestFileVersion: 0
-CRC: 2207081005
+CRC: 1404713384
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: f4644116aa6e175a105c818ce8213310
+    Hash: 1871122e2f68344e9af6b2fd98c25903
   TypeTreeHash:
     serializedVersion: 2
     Hash: 96cd30ae7202ab6d576ce8273ebb5f78
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: f4644116aa6e175a105c818ce8213310
+    Hash: 1871122e2f68344e9af6b2fd98c25903
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -62,9 +62,9 @@ Assets:
 - Assets/sounds/Weapons/type_matchfmj.wav
 - Assets/sounds/Weapons/model_asval.wav
 - Assets/sounds/Weapons/type_starslug.wav
-- Assets/sounds/Weapons/maker_lonestar.wav
+- Assets/sprites/hud_suit_full.tga
 - Assets/sounds/Weapons/maker_sword.wav
-- Assets/sprites/HudSuitEmpty.tga
+- Assets/sounds/Weapons/maker_lonestar.wav
 - Assets/sounds/Weapons/maker_molot.wav
 - Assets/sounds/Weapons/maker_tochmash.wav
 - Assets/sprites/hit_up.tga
@@ -352,16 +352,18 @@ Assets:
 - Assets/sounds/Weapons/maker_beretta.wav
 - Assets/sounds/Weapons/model_axmc.wav
 - Assets/sounds/Weapons/model_mp9n.wav
+- Assets/sprites/hud_dmg_dehydrated.tga
 - Assets/sounds/Numbers/Twelve.wav
 - Assets/sounds/Weapons/type_rsp30white.wav
-- Assets/sounds/Weapons/type_shrap25.wav
 - Assets/sprites/hud_number_8.tga
+- Assets/sprites/hl2flashlightcookie.tga
 - Assets/sounds/Weapons/caliber_50bmg.wav
 - Assets/sounds/Weapons/type_flechette.wav
 - Assets/sounds/Weapons/model_vsk94.wav
 - Assets/sounds/Weapons/maker_dt.wav
 - Assets/sounds/Compass/West.wav
 - Assets/sounds/FX/wpn_hudoff.wav
+- Assets/sounds/Weapons/type_shrap25.wav
 - Assets/sounds/Weapons/type_sp6.wav
 - Assets/sounds/Weapons/type_t45m1.wav
 - Assets/sounds/Numbers/Sixty.wav
@@ -394,7 +396,6 @@ Assets:
 - Assets/sounds/Weapons/type_prs.wav
 - Assets/sounds/Weapons/model_nineteenx.wav
 - Assets/sounds/Weapons/model_stm9.wav
-- Assets/sprites/HudSuitFull.tga
 - Assets/sprites/hud_divider.tga
 - Assets/sounds/Time/TheTimeIsNow.wav
 - Assets/sounds/Weapons/type_buckshot7mm.wav
@@ -446,6 +447,7 @@ Assets:
 - Assets/sounds/Weapons/model_dvl10.wav
 - Assets/sounds/Weapons/model_rgo.wav
 - Assets/sounds/Weapons/generic_doublebarrelshotgun.wav
+- Assets/sprites/hud_dmg_exhausted.tga
 - Assets/sounds/Time/Seconds.wav
 - Assets/sounds/Health/SplintApplied.wav
 - Assets/sounds/Weapons/type_rsp30green.wav
@@ -500,9 +502,10 @@ Assets:
 - Assets/sounds/Weapons/maker_tula.wav
 - Assets/sounds/General/KeycardRequired.wav
 - Assets/sounds/Numbers/Thirty.wav
-- Assets/sounds/Weapons/model_mdr.wav
+- Assets/sprites/hud_suit_empty.tga
 - Assets/sounds/Weapons/generic_heavymachinegun.wav
 - Assets/sounds/Weapons/type_buckshot62mm.wav
+- Assets/sounds/Weapons/model_mdr.wav
 - Assets/sounds/Weapons/type_lps.wav
 - Assets/sounds/Weapons/type_tt.wav
 - Assets/sounds/Weapons/model_aks74ub.wav
