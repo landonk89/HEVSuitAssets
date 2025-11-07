@@ -2,19 +2,19 @@
 // Example: SomeEventName folder/filename1 folder/filename2 folder/filename3
 //
 // Tags available: 
-//	loops(int) - How many times to play this clip in a row without delay between each playback. Always 1 if not specified.
-//	interval(float) - Only applies if loops > 1, the amount of silence in seconds between loops. Always zero if not specified.
-//	pitch(float) - The pitch of the audio, where 1.0 is default, 0.5 is half, 2.0 is double, and so on.
-//	volume(float) - The volume of the audio, where 1.0 is default.
-//	delay(float) - Wait this long in seconds before playing this sound.
+//	l: loops(int) - How many times to play this clip in a row without delay between each playback. Always 1 if not specified.
+//	i: interval(float) - Only applies if loops > 1, the amount of silence in seconds between loops. Always zero if not specified.
+//	p: pitch(float) - The pitch of the audio, where 1.0 is default, 0.5 is half, 2.0 is double, and so on.
+//	v: volume(float) - The volume of the audio, where 1.0 is default.
+//	d: delay(float) - Wait this long in seconds before playing this sound.
 //
 // Default delay between audioclips is 0.25s, unless otherwise specified.
 // Example usage of tags:
-// [loops:3,interval:0.3]folder/filename - Play this file 3 times in a row with 0.3 seconds of silence between loops.
-// [pitch:1.2]folder/filename - This audio's pitch is 20% above normal.
+// [l:3,i:0.3]folder/filename - Play this file 3 times in a row with 0.3 seconds of silence between loops.
+// [p:1.2]folder/filename - This audio's pitch is 20% above normal.
 //
 // Multiple tags can exist together, separated by commas (NO SPACES HERE!!) like so:
-// [delay:1.5,volume:0.7,pitch:0.8]folder/filename
+// [d:1.5,v:0.7,p:0.8]folder/filename
 //
 // Lines starting with $ will set the working directory Ex: $assets/sounds/compass
 
@@ -24,13 +24,15 @@ FirstRaid general/bell general/welcome
 LowAmmo fx/warning
 OutOfAmmo fx/warning General/AmmoDepleted
 Malfunction fx/warning Weapons/Malfunction general/detected
-HeavyBleeding [loops:3,interval:0.2,pitch:1.1]fx/beep health/MajorBloodLoss general/Detected
-LightBleeding [loops:3,interval:0.1]fx/boop health/MinorBloodLoss general/Detected
-MajorFracture [loops:3,interval:0.2,pitch:1.1]fx/beep Health/MajorFracture General/Detected
-MinorFracture [loops:3,interval:0.1]fx/boop Health/MinorFracture General/Detected
-NearDeath [loops:3,interval:0.2,pitch:1.1]fx/beep General/Warning Health/UserDeathImminent Health/SeekMedicalAttention
-Death [loops:2]fx/beep [loops:2]fx/beep fx/beep fx/beep fx/flatline
-Death [loops:2]fx/beep [loops:2]fx/beep fx/beep fx/flatline
+HeavyBleeding [l:3,i:0.2,p:1.4]fx/boop health/MajorBloodLoss general/Detected
+LightBleeding [l:3,i:0.1,p:1.2]fx/boop health/MinorBloodLoss general/Detected
+MajorFracture [l:3,i:0.2,p:1.4]fx/boop Health/MajorFracture General/Detected
+MinorFracture [l:3,i:0.1,p:1.2]fx/boop Health/MinorFracture General/Detected
+GiveMorphine [p:1.3,v:0.5]fx/blip [p:1.3,v:0.4,d:0]fx/blip fx/hiss health/morphineshot
+GiveTourniquet [p:1.2,v:0.5]fx/blip [p:1.2,v:0.4,d:0]fx/blip health/TourniquetApplied
+NearDeath [l:3,i:0.1,p:1.1]fx/beep General/Warning Health/UserDeathImminent Health/SeekMedicalAttention
+Death [l:2]fx/beep [l:2]fx/beep fx/beep fx/beep fx/flatline
+Death [l:2]fx/beep [l:2]fx/beep fx/beep fx/flatline
 MortarStrike fx/warning general/danger inraidevents/ArtilleryBarrageImminent
 
 // Compass

@@ -1,22 +1,30 @@
 ManifestFileVersion: 0
-CRC: 1404713384
+CRC: 3803949284
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 1871122e2f68344e9af6b2fd98c25903
+    Hash: 7bc508ea9a37a7f27e2c846537d379f9
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 96cd30ae7202ab6d576ce8273ebb5f78
+    Hash: 0a522933e987c44045269f6e00cb4ad8
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: 1871122e2f68344e9af6b2fd98c25903
+    Hash: 7bc508ea9a37a7f27e2c846537d379f9
 HashAppended: 0
 ClassTypes:
 - Class: 1
   Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
 - Class: 28
   Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
 - Class: 49
+  Script: {instanceID: 0}
+- Class: 82
   Script: {instanceID: 0}
 - Class: 83
   Script: {instanceID: 0}
@@ -27,8 +35,14 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 11500000, guid: 30649d3a9faa99c48a7b1166b86bf2a0, type: 3}
 - Class: 114
+  Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+- Class: 114
   Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
 - Class: 115
+  Script: {instanceID: 0}
+- Class: 128
   Script: {instanceID: 0}
 - Class: 213
   Script: {instanceID: 0}
@@ -39,10 +53,38 @@ ClassTypes:
 - Class: 224
   Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers:
+- AssemblyName: Unity.TextMeshPro
+  ClassName: TMPro.FaceInfo_Legacy
+- AssemblyName: Unity.TextMeshPro
+  ClassName: TMPro.FontAssetCreationSettings
+- AssemblyName: Unity.TextMeshPro
+  ClassName: TMPro.KerningTable
+- AssemblyName: Unity.TextMeshPro
+  ClassName: TMPro.TMP_Character
+- AssemblyName: Unity.TextMeshPro
+  ClassName: TMPro.TMP_FontFeatureTable
+- AssemblyName: Unity.TextMeshPro
+  ClassName: TMPro.TMP_FontWeightPair
+- AssemblyName: Unity.TextMeshPro
+  ClassName: TMPro.TMP_GlyphAdjustmentRecord
+- AssemblyName: Unity.TextMeshPro
+  ClassName: TMPro.TMP_GlyphPairAdjustmentRecord
+- AssemblyName: Unity.TextMeshPro
+  ClassName: TMPro.TMP_GlyphValueRecord
+- AssemblyName: Unity.TextMeshPro
+  ClassName: TMPro.VertexGradient
 - AssemblyName: UnityEngine.CoreModule
   ClassName: UnityEngine.Events.PersistentCallGroup
 - AssemblyName: UnityEngine.CoreModule
   ClassName: UnityEngine.RectOffset
+- AssemblyName: UnityEngine.TextCoreFontEngineModule
+  ClassName: UnityEngine.TextCore.FaceInfo
+- AssemblyName: UnityEngine.TextCoreFontEngineModule
+  ClassName: UnityEngine.TextCore.Glyph
+- AssemblyName: UnityEngine.TextCoreFontEngineModule
+  ClassName: UnityEngine.TextCore.GlyphMetrics
+- AssemblyName: UnityEngine.TextCoreFontEngineModule
+  ClassName: UnityEngine.TextCore.GlyphRect
 - AssemblyName: UnityEngine.UI
   ClassName: UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
 Assets:
@@ -203,23 +245,25 @@ Assets:
 - Assets/sounds/Weapons/type_7u4.wav
 - Assets/sounds/Weapons/caliber_762x25.wav
 - Assets/sounds/Weapons/maker_yarygin.wav
+- Assets/sprites/fillrect.png
 - Assets/sounds/Weapons/model_akms.wav
-- Assets/sounds/Weapons/type_rrlp.wav
 - Assets/sprites/hud_dmg_bullet.tga
-- Assets/sounds/Weapons/type_sb193.wav
+- Assets/sounds/Weapons/type_rrlp.wav
 - Assets/sounds/Weapons/maker_soyuz.wav
 - Assets/sounds/Weapons/model_pm_threaded.wav
 - Assets/sounds/Weapons/type_pbm.wav
 - Assets/sounds/Weapons/model_sa58.wav
+- Assets/sounds/Weapons/type_sb193.wav
 - Assets/sounds/Weapons/type_rip.wav
 - Assets/sounds/FX/hiss.wav
 - Assets/sounds/Weapons/model_mp7a2.wav
 - Assets/sounds/Weapons/caliber_357magnum.wav
 - Assets/sounds/Weapons/maker_simonov.wav
 - Assets/sounds/Time/Minutes.wav
+- Assets/sprites/IconContrastTest3.tga
 - Assets/sounds/Weapons/part_foregrip.wav
-- Assets/sounds/Weapons/type_stun.wav
 - Assets/sounds/Weapons/caliber_9x19.wav
+- Assets/sounds/Weapons/type_stun.wav
 - Assets/sounds/General/Administered.wav
 - Assets/sounds/General/PowerLevel.wav
 - Assets/sounds/Health/MajorFracture.wav
@@ -416,6 +460,7 @@ Assets:
 - Assets/sounds/Weapons/model_m4a1.wav
 - Assets/sounds/Weapons/type_pp.wav
 - Assets/sounds/Weapons/type_pm.wav
+- Assets/sprites/IconContrastTest2.tga
 - Assets/sounds/Weapons/type_cartridge.wav
 - Assets/sounds/Weapons/model_aug_a1.wav
 - Assets/sounds/Weapons/model_vector45.wav
@@ -454,6 +499,7 @@ Assets:
 - Assets/sounds/Weapons/type_ss197sr.wav
 - Assets/sounds/Weapons/part_bolt.wav
 - Assets/sounds/General/Percent.wav
+- Assets/sprites/IconContrastTest1.tga
 - Assets/sounds/Weapons/type_tracer.wav
 - Assets/sounds/Weapons/model_uzi.wav
 - Assets/sounds/Health/Exhausted.wav
@@ -533,6 +579,7 @@ Assets:
 - Assets/sounds/Weapons/type_ap20_full.wav
 - Assets/sounds/Weapons/maker_usordnance.wav
 - Assets/sounds/FX/boop.wav
+- Assets/sprites/emptyrect.png
 - Assets/sounds/Weapons/model_ak545short.wav
 - Assets/sounds/Weapons/model_aps.wav
 - Assets/sounds/Weapons/model_svt40.wav
@@ -609,6 +656,7 @@ Assets:
 - Assets/sounds/Weapons/model_m3super90full.wav
 - Assets/sounds/Weapons/model_m60e4.wav
 - Assets/sprites/hud_dmg_explosion.tga
+- Assets/sounds/Health/morphineshot.wav
 - Assets/sounds/Weapons/caliber_68x51.wav
 - Assets/sounds/Weapons/maker_milkor.wav
 - Assets/sounds/Weapons/type_ssa-ap.wav
