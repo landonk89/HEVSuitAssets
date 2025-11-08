@@ -1,15 +1,15 @@
 ManifestFileVersion: 0
-CRC: 3803949284
+CRC: 1568062048
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 7bc508ea9a37a7f27e2c846537d379f9
+    Hash: c064d25923cc910b2f0d13daccbce944
   TypeTreeHash:
     serializedVersion: 2
     Hash: 0a522933e987c44045269f6e00cb4ad8
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: 7bc508ea9a37a7f27e2c846537d379f9
+    Hash: c064d25923cc910b2f0d13daccbce944
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -98,6 +98,7 @@ Assets:
 - Assets/sounds/Weapons/type_m856a1.wav
 - Assets/sounds/Weapons/type_ppe.wav
 - Assets/sounds/Weapons/type_vmax.wav
+- Assets/sprites/scanlines.png
 - Assets/sounds/Numbers/Fifty.wav
 - Assets/sounds/Weapons/model_ash12.wav
 - Assets/sounds/Weapons/model_ump45.wav
@@ -202,6 +203,7 @@ Assets:
 - Assets/sounds/Weapons/type_m855.wav
 - Assets/sounds/Weapons/type_rg028.wav
 - Assets/sounds/Weapons/type_buckshotmagnum.wav
+- Assets/sprites/selection.png
 - Assets/sprites/hud_number_blank.tga
 - Assets/sounds/Weapons/type_acidgreenflare.wav
 - Assets/sounds/Weapons/maker_accuracyinternational.wav
@@ -460,7 +462,6 @@ Assets:
 - Assets/sounds/Weapons/model_m4a1.wav
 - Assets/sounds/Weapons/type_pp.wav
 - Assets/sounds/Weapons/type_pm.wav
-- Assets/sprites/IconContrastTest2.tga
 - Assets/sounds/Weapons/type_cartridge.wav
 - Assets/sounds/Weapons/model_aug_a1.wav
 - Assets/sounds/Weapons/model_vector45.wav
@@ -499,7 +500,6 @@ Assets:
 - Assets/sounds/Weapons/type_ss197sr.wav
 - Assets/sounds/Weapons/part_bolt.wav
 - Assets/sounds/General/Percent.wav
-- Assets/sprites/IconContrastTest1.tga
 - Assets/sounds/Weapons/type_tracer.wav
 - Assets/sounds/Weapons/model_uzi.wav
 - Assets/sounds/Health/Exhausted.wav

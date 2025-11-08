@@ -24,12 +24,13 @@ FirstRaid general/bell general/welcome
 LowAmmo fx/warning
 OutOfAmmo fx/warning General/AmmoDepleted
 Malfunction fx/warning Weapons/Malfunction general/detected
-HeavyBleeding [l:3,i:0.2,p:1.4]fx/boop health/MajorBloodLoss general/Detected
-LightBleeding [l:3,i:0.1,p:1.2]fx/boop health/MinorBloodLoss general/Detected
-MajorFracture [l:3,i:0.2,p:1.4]fx/boop Health/MajorFracture General/Detected
-MinorFracture [l:3,i:0.1,p:1.2]fx/boop Health/MinorFracture General/Detected
+HeavyBleeding [l:3,p:1.4]fx/boop health/MajorBloodLoss general/Detected
+LightBleeding [l:3,p:1.2]fx/boop health/MinorBloodLoss general/Detected
+MajorFracture [l:3,p:1.4]fx/boop Health/MajorFracture General/Detected
+MinorFracture [l:3,p:1.2]fx/boop Health/MinorFracture General/Detected
 GiveMorphine [p:1.3,v:0.5]fx/blip [p:1.3,v:0.4,d:0]fx/blip fx/hiss health/morphineshot
 GiveTourniquet [p:1.2,v:0.5]fx/blip [p:1.2,v:0.4,d:0]fx/blip health/TourniquetApplied
+PowerAssistMovement [p:1.2,v:0.5]fx/blip health/PowerAssistMovement general/activated
 NearDeath [l:3,i:0.1,p:1.1]fx/beep General/Warning Health/UserDeathImminent Health/SeekMedicalAttention
 Death [l:2]fx/beep [l:2]fx/beep fx/beep fx/beep fx/flatline
 Death [l:2]fx/beep [l:2]fx/beep fx/beep fx/flatline
