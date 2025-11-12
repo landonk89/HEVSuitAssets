@@ -11,12 +11,12 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\TestingZone\\WeaponSelectionController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B33FC08F-75B6-7B48-B265-A8B990DFD077}|Assembly-CSharp.csproj|c:\\games\\hevsuitmod\\hevsuitmod\\assets\\testingzone\\icongenv2test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B33FC08F-75B6-7B48-B265-A8B990DFD077}|Assembly-CSharp.csproj|solutionrelative:assets\\testingzone\\icongenv2test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Games\\HEVSuitMod\\HEVSuitMod\\Assets\\TestingZone\\IconGenV2Test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\TestingZone\\IconGenV2Test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B33FC08F-75B6-7B48-B265-A8B990DFD077}|Assembly-CSharp.csproj|C:\\Games\\HEVSuitMod\\HEVSuitMod\\assets\\testingzone\\makehudicon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B33FC08F-75B6-7B48-B265-A8B990DFD077}|Assembly-CSharp.csproj|solutionrelative:assets\\testingzone\\makehudicon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Games\\HEVSuitMod\\HEVSuitMod\\Assets\\TestingZone\\MakeHudIcon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\TestingZone\\MakeHudIcon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -57,8 +57,7 @@
               "RelativeToolTip": "Assets\\TestingZone\\IconGenV2Test.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAABpAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-07T01:32:15.939Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-07T01:32:15.939Z"
             },
             {
               "$type": "Document",

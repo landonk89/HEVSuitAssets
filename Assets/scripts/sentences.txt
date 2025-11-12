@@ -20,7 +20,8 @@
 
 // Events
 $assets/sounds/
-FirstRaid general/bell general/welcome
+FirstRaid fx/bell general/welcome
+FlashlightLow [l:2]fx/fuzz General/Power Numbers/Twenty General/Percent
 LowAmmo fx/warning
 OutOfAmmo fx/warning General/AmmoDepleted
 Malfunction fx/warning Weapons/Malfunction general/detected
